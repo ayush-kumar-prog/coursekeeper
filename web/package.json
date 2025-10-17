@@ -9,19 +9,24 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "axios": "^1.12.2",
+    "next": "15.5.6",
+    "openai": "^6.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.6"
+    "zod": "^4.1.12"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
+    "@eslint/eslintrc": "^3",
+    "@prisma/client": "^6.17.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.6",
-    "@eslint/eslintrc": "^3"
+    "prisma": "^6.17.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
