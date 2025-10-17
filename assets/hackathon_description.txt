@@ -1,47 +1,57 @@
 Requirements
 Challenge: Build autonomous, self-improving AI agents that can tap into real-time data sources, make sense of what they find, and take meaningful action without human intervention. Your challenge is to design agents that are not just reactive, but continuously learn and  improve as they operate—creating solutions that feel alive, adaptive, and built for real-world impact.
 3-minute demo recording along with all details required from Devpost
+
 Prizes
 $14,300+ in prizes
 + other prizes
+
 Best Use of Airia Platform
 $3,000 in cash
 3 winners
 1st Place: $1500 Amazon Gift Card + Free access to Airia License for 12 months
 2nd Place: $1000 Amazon Gift Card + Free access to Airia License for 12 months
 3rd Place: $500 Amazon Gift Card + Free access to Airia License for 12 months
+
 Best Use of StackAI
 $600 in cash
 3 winners
 1st: $300 + Job Interview
 2nd: $200 + Job Interview
 3rd: $100 + Job Interview
+
 Production Fit With TrueFoundry
 1 winner
 Whoop Bands 12-month subscription for the members of the winning team.
 Post about your TrueFoundry's AI Gateway Experience on LinkedIn, X, or Reddit, along with a short recording/screenshot of how you used TrueFoundry in your project. The post with the highest engagement (Likes/Upvotes) wins a $500 giftcard.
+
 Best Use of Senso.ai
 1 winner
 2k in credits
+
 Best use of Apify
 $1,000 in cash
 3 winners
 - 1st place: $1,000 cash prize and $1,000 Apify credits
 - 2nd place: $1,000 Apify credits
 - 3rd place: $500 Apify credits
+
 The Founder Empowerment Award, Presented by Lightfield
 3 winners
 1 Year Free of Lightfield CRM
+
 Best Use of Sentry
 1 winner
 $1000 Sentry Credits 1st Place
 $500 Sentry Credits to 2nd Place
+
 Best use of Redpanda
 $500 in cash
 1 winner
 $500 Amazon GC
 $1000 Redpanda Serverless credit for best use of Redpanda.
 $100 Redpanda Serverless credit for any team that uses Redpanda in their project (reach out to chandler.mayo@redpanda.com after event to redeem).
+
 Judging Criteria
 Idea - 20%
 Idea — Does the solution have the potential to solve a meaningful problem or demonstrate real-world value?
