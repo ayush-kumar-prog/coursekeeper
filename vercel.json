@@ -1,14 +1,7 @@
 {
-  "buildCommand": "cd web && npm install && npm run build",
-  "outputDirectory": "web/.next",
-  "devCommand": "cd web && npm run dev",
-  "installCommand": "cd web && npm install",
-  "framework": null,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/web/$1"
-    }
-  ]
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": ".next",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "rootDirectory": "web"
 }
-
