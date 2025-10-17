@@ -1,0 +1,183 @@
+// CourseKeeper Database Schema - SQLite Version for Development
+// This is a simplified version for local development with SQLite
+// For production, use schema.prisma with PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// User who owns subjects and receives patch notes
+model User {
+  id        String    @id @default(cuid())
+  email     String    @unique
+  name      String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  
+  subjects  Subject[]
+  
+  @@index([email])
+}
+
+// A subject/course that a user studied (e.g., "Computer Vision")
+model Subject {
+  id           String   @id @default(cuid())
+  userId       String
+  title        String   // e.g., "Computer Vision"
+  discipline   String   // "CS" | "BIO" | "ECON" | "PHYSICS" | etc.
+  baselineYear Int      // e.g., 2010 - when user studied it
+  description  String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  
+  // Relations
+  user         User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  uploads      Upload[]
+  baseline     BaselineTopic[]
+  runs         YearRun[]
+  
+  @@index([userId])
+  @@index([discipline])
+}
+
+// PDF uploads (syllabi, course materials)
+model Upload {
+  id         String   @id @default(cuid())
+  subjectId  String
+  fileName   String
+  fileUrl    String   // URL to stored file (S3, Vercel Blob, etc.)
+  fileSize   Int?     // Size in bytes
+  pages      Int?     // Number of pages in PDF
+  status     String   @default("processing") // "processing" | "completed" | "failed"
+  createdAt  DateTime @default(now())
+  
+  // Relations
+  subject    Subject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  
+  @@index([subjectId])
+}
+
+// Topics extracted from the baseline syllabus
+model BaselineTopic {
+  id         String  @id @default(cuid())
+  subjectId  String
+  name       String  // e.g., "SIFT", "Epipolar geometry", "Bag of Words"
+  type       String  // "concept" | "method" | "system" | "paper" | "tool"
+  category   String? // Higher-level grouping, e.g., "Feature Detection"
+  section    String? // Section from syllabus where this was found
+  summary    String?
+  sourcePage String? // Page/slide number from original PDF
+  importance Int     @default(5) // 1-10 importance scale
+  createdAt  DateTime @default(now())
+  
+  // Relations
+  subject    Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  
+  @@index([subjectId])
+  @@index([type])
+}
+
+// A run that generates patch notes for a specific year
+model YearRun {
+  id          String    @id @default(cuid())
+  subjectId   String
+  year        Int       // e.g., 2011, 2012, ..., 2024
+  status      String    @default("pending") // "pending" | "processing" | "completed" | "failed"
+  error       String?   // Error message if failed
+  
+  // Generated content
+  pdfUrl      String?   // URL to generated PDF
+  webContent  String?   // Cached rendered content for web display (JSON as string)
+  tldr        String?   // TL;DR summary
+  
+  // Timing
+  createdAt   DateTime  @default(now())
+  startedAt   DateTime?
+  completedAt DateTime?
+  
+  // Metrics
+  changesCount    Int       @default(0)
+  citationsCount  Int       @default(0)
+  processingTime  Int?      // Processing time in seconds
+  
+  // Relations
+  subject     Subject    @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  diffs       YearDiff[]
+  
+  @@unique([subjectId, year])
+  @@index([subjectId])
+  @@index([year])
+  @@index([status])
+}
+
+// Individual changes/diffs detected for a year
+model YearDiff {
+  id         String   @id @default(cuid())
+  runId      String
+  changeType String   // "ADD" | "RENAME" | "DEPRECATE" | "CORRECT" | "EMERGE"
+  
+  // What changed
+  fromTitle  String?  // Original topic name (for RENAME/DEPRECATE)
+  toTitle    String?  // New topic name (for ADD/RENAME)
+  
+  // Why it changed
+  rationale  String   // Explanation of the change
+  impact     String?  // Impact on the field/practice
+  
+  // Evidence and confidence
+  confidence Float    @default(0.5) // 0-1 confidence score
+  evidence   String   // JSON array of citations as string
+  lowEvidence Int     @default(0) // 1 if < 2 citations, 0 otherwise (Boolean as Int for SQLite)
+  
+  // Categorization
+  section    String?  // Which section this belongs to (major/tools/resources/etc.)
+  importance Int      @default(5) // 1-10 importance scale
+  
+  createdAt  DateTime @default(now())
+  
+  // Relations
+  yearRun    YearRun  @relation(fields: [runId], references: [id], onDelete: Cascade)
+  
+  @@index([runId])
+  @@index([changeType])
+  @@index([importance])
+}
+
+// Optional: Track email notifications sent
+model EmailNotification {
+  id         String   @id @default(cuid())
+  userId     String
+  runId      String
+  subject    String
+  sentAt     DateTime @default(now())
+  status     String   // "sent" | "failed" | "bounced"
+  error      String?
+  
+  @@index([userId])
+  @@index([runId])
+}
+
+// Optional: Store canon items from Senso for reference
+model CanonItem {
+  id         String   @id @default(cuid())
+  discipline String   // Which field this belongs to
+  title      String
+  url        String?
+  venue      String?  // Conference, journal, website
+  year       Int
+  type       String   // "paper" | "tool" | "course" | "concept"
+  summary    String?
+  confidence Float    @default(0.5)
+  metadata   String?  // Additional metadata from Senso as JSON string
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  
+  @@index([discipline])
+  @@index([year])
+  @@index([type])
+}
