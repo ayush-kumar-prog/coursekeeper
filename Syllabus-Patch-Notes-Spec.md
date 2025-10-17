@@ -312,8 +312,8 @@ model YearDiff {
 
 - **Frontend**: Next.js (App Router), Tailwind (optional).  
 - **Backend APIs**: Next.js API routes.  
-- **DB**: Vercel Postgres (Neon) + Prisma (or Supabase Postgres).  
-- **Storage**: Vercel Blob or S3.  
+- **DB**: Supabase Postgres.  
+- **Storage**: Vercel Blob.  
 - **Email**: Resend (or SMTP).  
 - **PDF**: Playwright or @react-pdf/renderer.  
 - **LLM**: OpenAI (function calling + embeddings).  
