@@ -7,7 +7,7 @@
 
 ## Quick Start (SQLite for Development)
 
-Since we don't have Supabase credentials yet, let's use SQLite for immediate development:
+Since we don't have Supabase credentials yet, let's use SQLite for immediate development
 
 ### Step 1: Create .env file
 ```bash
