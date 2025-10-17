@@ -1,0 +1,1190 @@
+[
+  {
+    "arxivId": "2510.14944",
+    "title": "MetaBench: A Multi-task Benchmark for Assessing LLMs in Metabolomics",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities on general text; however, their proficiency in specialized scientific domains that require deep, interconnected knowledge remains largely uncharacterized. Metabolomics presents unique challenges with its complex biochemical pathways, heterogeneous identifier systems, and fragmented databases. To systematically evaluate LLM capabilities in this domain, we introduce MetaBench, the first benchmark for metabolomics assessment. Curated from authoritative public resources, MetaBench evaluates five capabilities essential for metabolomics research: knowledge, understanding, grounding, reasoning, and research. Our evaluation of 25 open- and closed-source LLMs reveals distinct performance patterns across metabolomics tasks: while models perform well on text generation tasks, cross-database identifier grounding remains challenging even with retrieval augmentation. Model performance also decreases on long-tail metabolites with sparse annotations. With MetaBench, we provide essential infrastructure for developing and evaluating metabolomics AI systems, enabling systematic progress toward reliable computational tools for metabolomics research.\n        △ Less",
+    "authors": [
+      "Yuxing Lu",
+      "Xukai Zhao",
+      "J. Ben Tamo",
+      "Micky C. Nnamdi",
+      "Rui Peng",
+      "Shuang Zeng",
+      "Xingyu Hu",
+      "Jinzhuo Wang",
+      "May D. Wang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CE"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14944",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14944.pdf",
+    "year": 2025,
+    "comments": "Comments:\n22 pages, 6 figures, 4 tables"
+  },
+  {
+    "arxivId": "2510.14939",
+    "title": "Decoding in the presence of ISI without interleaving ORBGRAND AI",
+    "abstract": "Inter symbol interference (ISI), which occurs in a wide variety of channels, is a result of time dispersion. It can be mitigated by equalization which results in noise coloring. For such colored noise, we propose a decoder called Ordered Reliability Bit Guessing Random Additive Noise Decoding (ORBGRANDAI) which is inspired by the development of approximate independence in statistical physics. By foregoing interleaving, ORBGRAND-AI can deliver the same, or lower, block error rate (BLER) for the same amount of energy per information bit in an ISI channel as a state-of-the-art soft input decoder, such as Cyclic Redundancy Check Assisted-Successive Cancellation List (CA-SCL) decoding, with an interleaver. To assess the decoding performance of ORBGRAND-AI, we consider delay tap models and their associated colored noise. In particular, we examine a two-tap dicode ISI channel as well as an ISI channel derived from data from RFView, a physics-informed modeling and simulation tool. We investigate the dicode and RFView channel under a variety of imperfect channel state information assumptions and show that a second order autoregressive model adequately represents the RFView channel effect.\n        △ Less",
+    "authors": [
+      "Ken R. Duffy",
+      "Moritz Grundei",
+      "Jane A. Millward",
+      "Muralidhar Rangaswamy",
+      "Muriel Medard"
+    ],
+    "categories": [
+      "eess.SP"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14939",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14939.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14937",
+    "title": "AI-Powered Early Diagnosis of Mental Health Disorders from Real-World Clinical Conversations",
+    "abstract": "Mental health disorders remain among the leading cause of disability worldwide, yet conditions such as depression, anxiety, and Post-Traumatic Stress Disorder (PTSD) are frequently underdiagnosed or misdiagnosed due to subjective assessments, limited clinical resources, and stigma and low awareness. In primary care settings, studies show that providers misidentify depression or anxiety in over 60% of cases, highlighting the urgent need for scalable, accessible, and context-aware diagnostic tools that can support early detection and intervention. In this study, we evaluate the effectiveness of machine learning models for mental health screening using a unique dataset of 553 real-world, semistructured interviews, each paried with ground-truth diagnoses for major depressive episodes (MDE), anxiety disorders, and PTSD. We benchmark multiple model classes, including zero-shot prompting with GPT-4.1 Mini and MetaLLaMA, as well as fine-tuned RoBERTa models using LowRank Adaptation (LoRA). Our models achieve over 80% accuracy across diagnostic categories, with especially strongperformance on PTSD (up to 89% accuracy and 98% recall). We also find that using shorter context, focused context segments improves recall, suggesting that focused narrative cues enhance detection sensitivity. LoRA fine-tuning proves both efficient and effective, with lower-rank configurations (e.g., rank 8 and 16) maintaining competitive performance across evaluation metrics. Our results demonstrate that LLM-based models can offer substantial improvements over traditional self-report screening tools, providing a path toward low-barrier, AI-powerd early diagnosis. This work lays the groundwork for integrating machine learning into real-world clinical workflows, particularly in low-resource or high-stigma environments where access to timely mental health care is most limited.\n        △ Less",
+    "authors": [
+      "Jianfeng Zhu",
+      "Julina Maharjan",
+      "Xinyu Li",
+      "Karin G. Coifman",
+      "Ruoming Jin"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14937",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14937.pdf",
+    "year": 2025,
+    "comments": "Comments:\n7 pages 1 figure"
+  },
+  {
+    "arxivId": "2510.14936",
+    "title": "Circuit Insights: Towards Interpretability Beyond Activations",
+    "abstract": "The fields of explainable AI and mechanistic interpretability aim to uncover the internal structure of neural networks, with circuit discovery as a central tool for understanding model computations. Existing approaches, however, rely on manual inspection and remain limited to toy tasks. Automated interpretability offers scalability by analyzing isolated features and their activations, but it often misses interactions between features and depends strongly on external LLMs and dataset quality. Transcoders have recently made it possible to separate feature attributions into input-dependent and input-invariant components, providing a foundation for more systematic circuit analysis. Building on this, we propose WeightLens and CircuitLens, two complementary methods that go beyond activation-based analysis. WeightLens interprets features directly from their learned weights, removing the need for explainer models or datasets while matching or exceeding the performance of existing methods on context-independent features. CircuitLens captures how feature activations arise from interactions between components, revealing circuit-level dynamics that activation-only approaches cannot identify. Together, these methods increase interpretability robustness and enhance scalable mechanistic analysis of circuits while maintaining efficiency and quality.\n        △ Less",
+    "authors": [
+      "Elena Golimblevskaia",
+      "Aakriti Jain",
+      "Bruno Puri",
+      "Ammar Ibrahim",
+      "Wojciech Samek",
+      "Sebastian Lapuschkin"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14936",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14936.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14928",
+    "title": "Instruction Set Migration at Warehouse Scale",
+    "abstract": "Migrating codebases from one instruction set architecture (ISA) to another is a major engineering challenge. A recent example is the adoption of Arm (in addition to x86) across the major Cloud hyperscalers. Yet, this problem has seen limited attention by the academic community. Most work has focused on static and dynamic binary translation, and the traditional conventional wisdom has been that this is the primary challenge.\n  In this paper, we show that this is no longer the case. Modern ISA migrations can often build on a robust open-source ecosystem, making it possible to recompile all relevant software from scratch. This introduces a new and multifaceted set of challenges, which are different from binary translation.\n  By analyzing a large-scale migration from x86 to Arm at Google, spanning almost 40,000 code commits, we derive a taxonomy of tasks involved in ISA migration. We show how Google automated many of the steps involved, and demonstrate how AI can play a major role in automatically addressing these tasks. We identify tasks that remain challenging and highlight research challenges that warrant further attention.\n        △ Less",
+    "authors": [
+      "Eric Christopher",
+      "Kevin Crossan",
+      "Wolff Dobson",
+      "Chris Kennelly",
+      "Drew Lewis",
+      "Kun Lin",
+      "Martin Maas",
+      "Parthasarathy Ranganathan",
+      "Emma Rapati",
+      "Brian Yang"
+    ],
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14928",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14928.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14884",
+    "title": "Learning When Not to Learn: Risk-Sensitive Abstention in Bandits with Unbounded Rewards",
+    "abstract": "In high-stakes AI applications, even a single action can cause irreparable damage. However, nearly all of sequential decision-making theory assumes that all errors are recoverable (e.g., by bounding rewards). Standard bandit algorithms that explore aggressively may cause irreparable damage when this assumption fails. Some prior work avoids irreparable errors by asking for help from a mentor, but a mentor may not always be available. In this work, we formalize a model of learning with unbounded rewards without a mentor as a two-action contextual bandit with an abstain option: at each round the agent observes an input and chooses either to abstain (always 0 reward) or to commit (execute a preexisting task policy). Committing yields rewards that are upper-bounded but can be arbitrarily negative, and the commit reward is assumed Lipschitz in the input. We propose a caution-based algorithm that learns when not to learn: it chooses a trusted region and commits only where the available evidence does not already certify harm. Under these conditions and i.i.d. inputs, we establish sublinear regret guarantees, theoretically demonstrating the effectiveness of cautious exploration for deploying learning agents safely in high-stakes environments.\n        △ Less",
+    "authors": [
+      "Sarah Liaw",
+      "Benjamin Plaut"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14884",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14884.pdf",
+    "year": 2025,
+    "comments": "Comments:\n16 pages, 1 figure; under submission"
+  },
+  {
+    "arxivId": "2510.14881",
+    "title": "The Gatekeeper Knows Enough",
+    "abstract": "Large Language Models (LLMs) are increasingly deployed as autonomous agents, yet their practical utility is fundamentally constrained by a limited context window and state desynchronization resulting from the LLMs' stateless nature and inefficient context management. These limitations lead to unreliable output, unpredictable behavior, and inefficient resource usage, particularly when interacting with large, structured, and sensitive knowledge systems such as codebases and documents. To address these challenges, we introduce the Gatekeeper Protocol, a novel, domain-agnostic framework that governs agent-system interactions. Our protocol mandates that the agent first operate and reason on a minimalist, low-fidelity \"latent state\" representation of the system to strategically request high-fidelity context on demand. All interactions are mediated through a unified JSON format that serves as a declarative, state-synchronized protocol, ensuring the agent's model of the system remains verifiably grounded in the system's reality. We demonstrate the efficacy of this protocol with Sage, a reference implementation of the Gatekeeper Protocol for software development. Our results show that this approach significantly increases agent reliability, improves computational efficiency by minimizing token consumption, and enables scalable interaction with complex systems, creating a foundational methodology for building more robust, predictable, and grounded AI agents for any structured knowledge domain.\n        △ Less",
+    "authors": [
+      "Fikresilase Wondmeneh Abebayew"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.IT"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14881",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14881.pdf",
+    "year": 2025,
+    "comments": "Comments:\n7 pages, 1 figure"
+  },
+  {
+    "arxivId": "2510.14871",
+    "title": "From Loop Nests to Silicon: Mapping AI Workloads onto AMD NPUs with MLIR-AIR",
+    "abstract": "General-purpose compilers abstract away parallelism, locality, and synchronization, limiting their effectiveness on modern spatial architectures. As modern computing architectures increasingly rely on fine-grained control over data movement, execution order, and compute placement for performance, compiler infrastructure must provide explicit mechanisms for orchestrating compute and data to fully exploit such architectures. We introduce MLIR-AIR, a novel, open-source compiler stack built on MLIR that bridges the semantic gap between high-level workloads and fine-grained spatial architectures such as AMD's NPUs. MLIR-AIR defines the AIR dialect, which provides structured representations for asynchronous and hierarchical operations across compute and memory resources. AIR primitives allow the compiler to orchestrate spatial scheduling, distribute computation across hardware regions, and overlap communication with computation without relying on ad hoc runtime coordination or manual scheduling. We demonstrate MLIR-AIR's capabilities through two case studies: matrix multiplication and the multi-head attention block from the LLaMA 2 model. For matrix multiplication, MLIR-AIR achieves up to 78.7% compute efficiency and generates implementations with performance almost identical to state-of-the-art, hand-optimized matrix multiplication written using the lower-level, close-to-metal MLIR-AIE framework. For multi-head attention, we demonstrate that the AIR interface supports fused implementations using approximately 150 lines of code, enabling tractable expression of complex workloads with efficient mapping to spatial hardware. MLIR-AIR transforms high-level structured control flow into spatial programs that efficiently utilize the compute fabric and memory hierarchy of an NPU, leveraging asynchronous execution, tiling, and communication overlap through compiler-managed scheduling.\n        △ Less",
+    "authors": [
+      "Erwei Wang",
+      "Samuel Bayliss",
+      "Andra Bisca",
+      "Zachary Blair",
+      "Sangeeta Chowdhary",
+      "Kristof Denolf",
+      "Jeff Fifield",
+      "Brandon Freiberger",
+      "Erika Hunhoff",
+      "Phil James-Roxby",
+      "Jack Lo",
+      "Joseph Melber",
+      "Stephen Neuendorffer",
+      "Eddie Richter",
+      "Andre Rosti",
+      "Javier Setoain",
+      "Gagandeep Singh",
+      "Endri Taka",
+      "Pranathi Vasireddy",
+      "Zhewen Yu",
+      "Niansong Zhang",
+      "Jinming Zhuang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AR",
+      "cs.LG"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14871",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14871.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14861",
+    "title": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
+    "abstract": "Modern science advances fastest when thought meets action. LabOS represents the first AI co-scientist that unites computational reasoning with physical experimentation through multimodal perception, self-evolving agents, and Entended-Reality(XR)-enabled human-AI collaboration. By connecting multi-model AI agents, smart glasses, and human-AI collaboration, LabOS allows AI to see what scientists see, understand experimental context, and assist in real-time execution. Across applications--from cancer immunotherapy target discovery to stem-cell engineering -- LabOS shows that AI can move beyond computational design to participation, turning the laboratory into an intelligent, collaborative environment where human and machine discovery evolve together.\n        △ Less",
+    "authors": [
+      "Le Cong",
+      "Zaixi Zhang",
+      "Xiaotong Wang",
+      "Yin Di",
+      "Ruofan Jin",
+      "Michal Gerasimiuk",
+      "Yinkai Wang",
+      "Ravi K. Dinesh",
+      "David Smerkous",
+      "Alex Smerkous",
+      "Xuekun Wu",
+      "Shilong Liu",
+      "Peishan Li",
+      "Yi Zhu",
+      "Simran Serrao",
+      "Ning Zhao",
+      "Imran A. Mohammad",
+      "John B. Sunwoo",
+      "Joseph C. Wu",
+      "Mengdi Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14861",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14861.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14846",
+    "title": "Where to Search: Measure the Prior-Structured Search Space of LLM Agents",
+    "abstract": "The generate-filter-refine (iterative paradigm) based on large language models (LLMs) has achieved progress in reasoning, programming, and program discovery in AI+Science. However, the effectiveness of search depends on where to search, namely, how to encode the domain prior into an operationally structured hypothesis space. To this end, this paper proposes a compact formal theory that describes and measures LLM-assisted iterative search guided by domain priors. We represent an agent as a fuzzy relation operator on inputs and outputs to capture feasible transitions; the agent is thereby constrained by a fixed safety envelope. To describe multi-step reasoning/search, we weight all reachable paths by a single continuation parameter and sum them to obtain a coverage generating function; this induces a measure of reachability difficulty; and it provides a geometric interpretation of search on the graph induced by the safety envelope. We further provide the simplest testable inferences and validate them via a majority-vote instantiation. This theory offers a workable language and operational tools to measure agents and their search spaces, proposing a systematic formal description of iterative search constructed by LLMs.\n        △ Less",
+    "authors": [
+      "Zhuo-Yang Song"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LO"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14846",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14846.pdf",
+    "year": 2025,
+    "comments": "Comments:\n10 pages, 2 figures, 1 table"
+  },
+  {
+    "arxivId": "2510.14832",
+    "title": "Intelligent Dynamic Handover via AI-assisted Signal Quality Prediction in 6G Multi-RAT Networks",
+    "abstract": "The emerging paradigm of 6G multiple Radio Access Technology (multi-RAT) networks, where cellular and Wireless Fidelity (WiFi) transmitters coexist, requires mobility decisions that remain reliable under fast channel dynamics, interference, and heterogeneous coverage. Handover in multi-RAT deployments is still highly reactive and event-triggered, relying on instantaneous measurements and threshold events. This work proposes a Machine Learning (ML)-assisted Predictive Conditional Handover (P-CHO) framework based on a model-driven and short-horizon signal quality forecasts. We present a generalized P-CHO sequence workflow orchestrated by a RAT Steering Controller, which standardizes data collection, parallel per-RAT predictions, decision logic with hysteresis-based conditions, and CHO execution. Considering a realistic multi-RAT environment, we train RAT-aware Long Short Term Memory (LSTM) networks to forecast the signal quality indicators of mobile users along randomized trajectories. The proposed P-CHO models are trained and evaluated under different channel models for cellular and IEEE 802.11 WiFi integrated coverage. We study the impact of hyperparameter tuning of LSTM models under different system settings, and compare direct multi-step versus recursive P-CHO variants. Comparisons against baseline predictors are also carried out. Finally, the proposed P-CHO is tested under soft and hard handover settings, showing that hysteresis-enabled P-CHO scheme is able to reduce handover failures and ping-pong events. Overall, the proposed P-CHO framework can enable accurate, low-latency, and proactive handovers suitable for ML-assisted handover steering in 6G multi-RAT deployments.\n        △ Less",
+    "authors": [
+      "Maria Lamprini A. Bartsioka",
+      "Anastasios Giannopoulos",
+      "Sotirios Spantideas"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.NI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14832",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14832.pdf",
+    "year": 2025,
+    "comments": "Comments:\n9 pages, 17 figures"
+  },
+  {
+    "arxivId": "2510.14831",
+    "title": "Scaling Tumor Segmentation: Best Lessons from Real and Synthetic Data",
+    "abstract": "AI for tumor segmentation is limited by the lack of large, voxel-wise annotated datasets, which are hard to create and require medical experts. In our proprietary JHH dataset of 3,000 annotated pancreatic tumor scans, we found that AI performance stopped improving after 1,500 scans. With synthetic data, we reached the same performance using only 500 real scans. This finding suggests that synthetic data can steepen data scaling laws, enabling more efficient model training than real data alone. Motivated by these lessons, we created AbdomenAtlas 2.0--a dataset of 10,135 CT scans with a total of 15,130 tumor instances per-voxel manually annotated in six organs (pancreas, liver, kidney, colon, esophagus, and uterus) and 5,893 control scans. Annotated by 23 expert radiologists, it is several orders of magnitude larger than existing public tumor datasets. While we continue expanding the dataset, the current version of AbdomenAtlas 2.0 already provides a strong foundation--based on lessons from the JHH dataset--for training AI to segment tumors in six organs. It achieves notable improvements over public datasets, with a +7% DSC gain on in-distribution tests and +16% on out-of-distribution tests.\n        △ Less",
+    "authors": [
+      "Qi Chen",
+      "Xinze Zhou",
+      "Chen Liu",
+      "Hao Chen",
+      "Wenxuan Li",
+      "Zekun Jiang",
+      "Ziyan Huang",
+      "Yuxuan Zhao",
+      "Dexin Yu",
+      "Junjun He",
+      "Yefeng Zheng",
+      "Ling Shao",
+      "Alan Yuille",
+      "Zongwei Zhou"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14831",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14831.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14803",
+    "title": "Scaling Artificial Intelligence for Multi-Tumor Early Detection with More Reports, Fewer Masks",
+    "abstract": "Early tumor detection save lives. Each year, more than 300 million computed tomography (CT) scans are performed worldwide, offering a vast opportunity for effective cancer screening. However, detecting small or early-stage tumors on these CT scans remains challenging, even for experts. Artificial intelligence (AI) models can assist by highlighting suspicious regions, but training such models typically requires extensive tumor masks--detailed, voxel-wise outlines of tumors manually drawn by radiologists. Drawing these masks is costly, requiring years of effort and millions of dollars. In contrast, nearly every CT scan in clinical practice is already accompanied by medical reports describing the tumor's size, number, appearance, and sometimes, pathology results--information that is rich, abundant, and often underutilized for AI training. We introduce R-Super, which trains AI to segment tumors that match their descriptions in medical reports. This approach scales AI training with large collections of readily available medical reports, substantially reducing the need for manually drawn tumor masks. When trained on 101,654 reports, AI models achieved performance comparable to those trained on 723 masks. Combining reports and masks further improved sensitivity by +13% and specificity by +8%, surpassing radiologists in detecting five of the seven tumor types. Notably, R-Super enabled segmentation of tumors in the spleen, gallbladder, prostate, bladder, uterus, and esophagus, for which no public masks or AI models previously existed. This study challenges the long-held belief that large-scale, labor-intensive tumor mask creation is indispensable, establishing a scalable and accessible path toward early detection across diverse tumor types.\n  We plan to release our trained models, code, and dataset at https://github.com/MrGiovanni/R-Super\n        △ Less",
+    "authors": [
+      "Pedro R. A. S. Bassi",
+      "Xinze Zhou",
+      "Wenxuan Li",
+      "Szymon Płotka",
+      "Jieneng Chen",
+      "Qi Chen",
+      "Zheren Zhu",
+      "Jakub Prządo",
+      "Ibrahim E. Hamacı",
+      "Sezgin Er",
+      "Yuhan Wang",
+      "Ashwin Kumar",
+      "Bjoern Menze",
+      "Jarosław B. Ćwikła",
+      "Yuyin Zhou",
+      "Akshay S. Chaudhari",
+      "Curtis P. Langlotz",
+      "Sergio Decherchi",
+      "Andrea Cavalli",
+      "Kang Wang",
+      "Yang Yang",
+      "Alan L. Yuille",
+      "Zongwei Zhou"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14803",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14803.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14800",
+    "title": "Morphology-Aware Prognostic model for Five-Year Survival Prediction in Colorectal Cancer from H&E Whole Slide Images",
+    "abstract": "Colorectal cancer (CRC) remains the third most prevalent malignancy globally, with approximately 154,000 new cases and 54,000 projected deaths anticipated for 2025. The recent advancement of foundation models in computational pathology has been largely propelled by task agnostic methodologies that can overlook organ-specific crucial morphological patterns that represent distinct biological processes that can fundamentally influence tumor behavior, therapeutic response, and patient outcomes. The aim of this study is to develop a novel, interpretable AI model, PRISM (Prognostic Representation of Integrated Spatial Morphology), that incorporates a continuous variability spectrum within each distinct morphology to characterize phenotypic diversity and reflecting the principle that malignant transformation occurs through incremental evolutionary processes rather than abrupt phenotypic shifts. PRISM is trained on 8.74 million histological images extracted from surgical resection specimens of 424 patients with stage III CRC. PRISM achieved superior prognostic performance for five-year OS (AUC = 0.70 +- 0.04; accuracy = 68.37% +- 4.75%; HR = 3.34, 95% CI = 2.28-4.90; p < 0.0001), outperforming existing CRC-specific methods by 15% and AI foundation models by ~23% accuracy. It showed sex-agnostic robustness (AUC delta = 0.02; accuracy delta = 0.15%) and stable performance across clinicopathological subgroups, with minimal accuracy fluctuation (delta = 1.44%) between 5FU/LV and CPT-11/5FU/LV regimens, replicating the Alliance cohort finding of no survival difference between treatments.\n        △ Less",
+    "authors": [
+      "Usama Sajjad",
+      "Abdul Rehman Akbar",
+      "Ziyu Su",
+      "Deborah Knight",
+      "Wendy L. Frankel",
+      "Metin N. Gurcan",
+      "Wei Chen",
+      "Muhammad Khalid Khan Niazi"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14800",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14800.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14741",
+    "title": "DEXTER: Diffusion-Guided EXplanations with TExtual Reasoning for Vision Models",
+    "abstract": "Understanding and explaining the behavior of machine learning models is essential for building transparent and trustworthy AI systems. We introduce DEXTER, a data-free framework that employs diffusion models and large language models to generate global, textual explanations of visual classifiers. DEXTER operates by optimizing text prompts to synthesize class-conditional images that strongly activate a target classifier. These synthetic samples are then used to elicit detailed natural language reports that describe class-specific decision patterns and biases. Unlike prior work, DEXTER enables natural language explanation about a classifier's decision process without access to training data or ground-truth labels. We demonstrate DEXTER's flexibility across three tasks-activation maximization, slice discovery and debiasing, and bias explanation-each illustrating its ability to uncover the internal mechanisms of visual classifiers. Quantitative and qualitative evaluations, including a user study, show that DEXTER produces accurate, interpretable outputs. Experiments on ImageNet, Waterbirds, CelebA, and FairFaces confirm that DEXTER outperforms existing approaches in global model explanation and class-level bias reporting. Code is available at https://github.com/perceivelab/dexter.\n        △ Less",
+    "authors": [
+      "Simone Carnemolla",
+      "Matteo Pennisi",
+      "Sarinda Samarasinghe",
+      "Giovanni Bellitto",
+      "Simone Palazzo",
+      "Daniela Giordano",
+      "Mubarak Shah",
+      "Concetto Spampinato"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14741",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14741.pdf",
+    "year": 2025,
+    "comments": "Comments:\nAccepted to NeurIPS 2025 (spotlight)"
+  },
+  {
+    "arxivId": "2510.14718",
+    "title": "Speculative Model Risk in Healthcare AI: Using Storytelling to Surface Unintended Harms",
+    "abstract": "Artificial intelligence (AI) is rapidly transforming healthcare, enabling fast development of tools like stress monitors, wellness trackers, and mental health chatbots. However, rapid and low-barrier development can introduce risks of bias, privacy violations, and unequal access, especially when systems ignore real-world contexts and diverse user needs. Many recent methods use AI to detect risks automatically, but this can reduce human engagement in understanding how harms arise and who they affect. We present a human-centered framework that generates user stories and supports multi-agent discussions to help people think creatively about potential benefits and harms before deployment. In a user study, participants who read stories recognized a broader range of harms, distributing their responses more evenly across all 13 harm types. In contrast, those who did not read stories focused primarily on privacy and well-being (58.3%). Our findings show that storytelling helped participants speculate about a broader range of harms and benefits and think more creatively about AI's impact on users.\n        △ Less",
+    "authors": [
+      "Xingmeng Zhao",
+      "Dan Schumacher",
+      "Veronica Rammouz",
+      "Anthony Rios"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14718",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14718.pdf",
+    "year": 2025,
+    "comments": "Comments:\n8 pages main + Appendix"
+  },
+  {
+    "arxivId": "2510.14686",
+    "title": "xLLM Technical Report",
+    "abstract": "We introduce xLLM, an intelligent and efficient Large Language Model (LLM) inference framework designed for high-performance, large-scale enterprise-grade serving, with deep optimizations for diverse AI accelerators. To address these challenges, xLLM builds a novel decoupled service-engine architecture. At the service layer, xLLM-Service features an intelligent scheduling module that efficiently processes multimodal requests and co-locates online and offline tasks through unified elastic scheduling to maximize cluster utilization. This module also relies on a workload-adaptive dynamic Prefill-Decode (PD) disaggregation policy and a novel Encode-Prefill-Decode (EPD) disaggregation policy designed for multimodal inputs. Furthermore, it incorporates a distributed architecture to provide global KV Cache management and robust fault-tolerant capabilities for high availability. At the engine layer, xLLM-Engine co-optimizes system and algorithm designs to fully saturate computing resources. This is achieved through comprehensive multi-layer execution pipeline optimizations, an adaptive graph mode and an xTensor memory management. xLLM-Engine also further integrates algorithmic enhancements such as optimized speculative decoding and dynamic EPLB, collectively serving to substantially boost throughput and inference efficiency. Extensive evaluations demonstrate that xLLM delivers significantly superior performance and resource efficiency. Under identical TPOT constraints, xLLM achieves throughput up to 1.7x that of MindIE and 2.2x that of vLLM-Ascend with Qwen-series models, while maintaining an average throughput of 1.7x that of MindIE with Deepseek-series models. xLLM framework is publicly available at https://github.com/jd-opensource/xllm and https://github.com/jd-opensource/xllm-service.\n        △ Less",
+    "authors": [
+      "Tongxuan Liu",
+      "Tao Peng",
+      "Peijun Yang",
+      "Xiaoyang Zhao",
+      "Xiusheng Lu",
+      "Weizhe Huang",
+      "Zirui Liu",
+      "Xiaoyu Chen",
+      "Zhiwei Liang",
+      "Jun Xiong",
+      "Donghe Jin",
+      "Minchao Zhang",
+      "Jinrong Guo",
+      "Yingxu Deng",
+      "Xu Zhang",
+      "Xianzhe Dong",
+      "Siqi Wang",
+      "Siyu Wu",
+      "Yu Wu",
+      "Zihan Tang",
+      "Yuting Zeng",
+      "Yanshu Wang",
+      "Jinguang Liu",
+      "Meng Kang",
+      "Menxin Li"
+    ],
+    "categories": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14686",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14686.pdf",
+    "year": 2025,
+    "comments": "Comments:\n39 pages"
+  },
+  {
+    "arxivId": "2510.14676",
+    "title": "NAEL: Non-Anthropocentric Ethical Logic",
+    "abstract": "We introduce NAEL (Non-Anthropocentric Ethical Logic), a novel ethical framework for artificial agents grounded in active inference and symbolic reasoning. Departing from conventional, human-centred approaches to AI ethics, NAEL formalizes ethical behaviour as an emergent property of intelligent systems minimizing global expected free energy in dynamic, multi-agent environments. We propose a neuro-symbolic architecture to allow agents to evaluate the ethical consequences of their actions in uncertain settings. The proposed system addresses the limitations of existing ethical models by allowing agents to develop context-sensitive, adaptive, and relational ethical behaviour without presupposing anthropomorphic moral intuitions. A case study involving ethical resource distribution illustrates NAEL's dynamic balancing of self-preservation, epistemic learning, and collective welfare.\n        △ Less",
+    "authors": [
+      "Bianca Maria Lerma",
+      "Rafael Peñaloza"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14676",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14676.pdf",
+    "year": 2025,
+    "comments": "Comments:\nAccepted to the FEAR workshop 2025"
+  },
+  {
+    "arxivId": "2510.14669",
+    "title": "Machine Learning and Public Health: Identifying and Mitigating Algorithmic Bias through a Systematic Review",
+    "abstract": "Machine learning (ML) promises to revolutionize public health through improved surveillance, risk stratification, and resource allocation. However, without systematic attention to algorithmic bias, ML may inadvertently reinforce existing health disparities. We present a systematic literature review of algorithmic bias identification, discussion, and reporting in Dutch public health ML research from 2021 to 2025. To this end, we developed the Risk of Algorithmic Bias Assessment Tool (RABAT) by integrating elements from established frameworks (Cochrane Risk of Bias, PROBAST, Microsoft Responsible AI checklist) and applied it to 35 peer-reviewed studies. Our analysis reveals pervasive gaps: although data sampling and missing data practices are well documented, most studies omit explicit fairness framing, subgroup analyses, and transparent discussion of potential harms. In response, we introduce a four-stage fairness-oriented framework called ACAR (Awareness, Conceptualization, Application, Reporting), with guiding questions derived from our systematic literature review to help researchers address fairness across the ML lifecycle. We conclude with actionable recommendations for public health ML practitioners to consistently consider algorithmic bias and foster transparency, ensuring that algorithmic innovations advance health equity rather than undermine it.\n        △ Less",
+    "authors": [
+      "Sara Altamirano",
+      "Arjan Vreeken",
+      "Sennay Ghebreab"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14669",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14669.pdf",
+    "year": 2025,
+    "comments": "Comments:\nExtended version of the paper accepted at the AAAI/ACM Conference on AI, Ethics, and Society (AIES 2025), including an appendix. 10 pages, 2 figures"
+  },
+  {
+    "arxivId": "2510.14665",
+    "title": "Beyond Hallucinations: The Illusion of Understanding in Large Language Models",
+    "abstract": "Large language models (LLMs) are becoming deeply embedded in human communication and decision-making, yet they inherit the ambiguity, bias, and lack of direct access to truth inherent in language itself. While their outputs are fluent, emotionally resonant, and coherent, they are generated through statistical prediction rather than grounded reasoning. This creates the risk of hallucination, responses that sound convincing but lack factual validity. Building on Geoffrey Hinton's observation that AI mirrors human intuition rather than reasoning, this paper argues that LLMs operationalize System 1 cognition at scale: fast, associative, and persuasive, but without reflection or falsification. To address this, we introduce the Rose-Frame, a three-dimensional framework for diagnosing cognitive and epistemic drift in human-AI interaction. The three axes are: (i) Map vs. Territory, which distinguishes representations of reality (epistemology) from reality itself (ontology); (ii) Intuition vs. Reason, drawing on dual-process theory to separate fast, emotional judgments from slow, reflective thinking; and (iii) Conflict vs. Confirmation, which examines whether ideas are critically tested through disagreement or simply reinforced through mutual validation. Each dimension captures a distinct failure mode, and their combination amplifies misalignment. Rose-Frame does not attempt to fix LLMs with more data or rules. Instead, it offers a reflective tool that makes both the model's limitations and the user's assumptions visible, enabling more transparent and critically aware AI deployment. It reframes alignment as cognitive governance: intuition, whether human or artificial, must remain governed by human reason. Only by embedding reflective, falsifiable oversight can we align machine fluency with human understanding.\n        △ Less",
+    "authors": [
+      "Rikard Rosenbacke",
+      "Carl Rosenbacke",
+      "Victor Rosenbacke",
+      "Martin McKee"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.HC"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14665",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14665.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14638",
+    "title": "Improving Cybercrime Detection and Digital Forensics Investigations with Artificial Intelligence",
+    "abstract": "According to a recent EUROPOL report, cybercrime is still recurrent in Europe, and different activities and countermeasures must be taken to limit, prevent, detect, analyze, and fight it. Cybercrime must be prevented with specific measures, tools, and techniques, for example through automated network and malware analysis. Countermeasures against cybercrime can also be improved with proper \\df analysis in order to extract data from digital devices trying to retrieve information on the cybercriminals. Indeed, results obtained through a proper \\df analysis can be leveraged to train cybercrime detection systems to prevent the success of similar crimes. Nowadays, some systems have started to adopt Artificial Intelligence (AI) algorithms for cyberattack detection and \\df analysis improvement. However, AI can be better applied as an additional instrument in these systems to improve the detection and in the \\df analysis. For this reason, we highlight how cybercrime analysis and \\df procedures can take advantage of AI. On the other hand, cybercriminals can use these systems to improve their skills, bypass automatic detection, and develop advanced attack techniques. The case study we presented highlights how it is possible to integrate the use of the three popular chatbots {\\tt Gemini}, {\\tt Copilot} and {\\tt chatGPT} to develop a Python code to encode and decoded images with steganographic technique, even though their presence is not an indicator of crime, attack or maliciousness but used by a cybercriminal as anti-forensics technique.\n        △ Less",
+    "authors": [
+      "Silvia Lucia Sanna",
+      "Leonardo Regano",
+      "Davide Maiorca",
+      "Giorgio Giacinto"
+    ],
+    "categories": [
+      "cs.CR"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14638",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14638.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14628",
+    "title": "RLAIF-SPA: Optimizing LLM-based Emotional Speech Synthesis via RLAIF",
+    "abstract": "Text-To-Speech synthesis has achieved near-human quality in neutral speech, but emotional expressiveness remains a challenge. Existing methods often rely on costly emotion annotations or optimize indirect objectives that fail to capture the emotional expressiveness and perceptual naturalness of speech, leading to generated speech that is accurate but emotionally flat. To address these challenges, we propose the RLAIF-SPA framework, incorporating a Reinforcement Learning from AI Feedback (RLAIF) mechanism to employ Automatic Speech Recognition (ASR) and Large Language Model (LLM) techniques to respectively judge semantic accuracy and prosodic-emotional label alignment as a direct reward for emotional expressiveness and intelligibility optimization. Specifically, it leverages Prosodic Label Alignment to enhance expressive quality by jointly considering semantic accuracy and prosodic-emotional alignment along four fine-grained dimensions: Structure, Emotion, Speed, and Tone. In addition, it incorporates Semantic Accuracy Feedback to ensure the generation of clear and accurate speech. Experiments on the Libri Speech dataset show that RLAIF-SPA outperforms Chat-TTS, with a 26.1% reduction in WER, a 9.1% increase in SIM-O, and over 10% improvement in human evaluation.\n        △ Less",
+    "authors": [
+      "Qing Yang",
+      "Zhenghao Liu",
+      "Junxin Wang",
+      "Yangfan Du",
+      "Pengcheng Huang",
+      "Tong Xiao"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14628",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14628.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14625",
+    "title": "Software Testing Education and Industry Needs - Report from the ENACTEST EU Project",
+    "abstract": "The evolving landscape of software development demands that software testers continuously adapt to new tools, practices, and acquire new skills. This study investigates software testing competency needs in industry, identifies knowledge gaps in current testing education, and highlights competencies and gaps not addressed in academic literature. This is done by conducting two focus group sessions and interviews with professionals across diverse domains, including railway industry, healthcare, and software consulting and performing a curated small-scale scoping review. The study instrument, co-designed by members of the ENACTEST project consortium, was developed collaboratively and refined through multiple iterations to ensure comprehensive coverage of industry needs and educational gaps. In particular, by performing a thematic qualitative analysis, we report our findings and observations regarding: professional training methods, challenges in offering training in industry, different ways of evaluating the quality of training, identified knowledge gaps with respect to academic education and industry needs, future needs and trends in testing education, and knowledge transfer methods within companies. Finally, the scoping review results confirm knowledge gaps in areas such as AI testing, security testing and soft skills.\n        △ Less",
+    "authors": [
+      "Mehrdad Saadatmand",
+      "Abbas Khan",
+      "Beatriz Marin",
+      "Ana C. R Paiva",
+      "Nele Van Asch",
+      "Graham Moran",
+      "Felix Cammaerts",
+      "Monique Snoeck",
+      "Alexandra Mendes"
+    ],
+    "categories": [
+      "cs.SE"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14625",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14625.pdf",
+    "year": 2025,
+    "comments": "Comments:\n* The paper is going to appear in the proceedings of the 26th International Conference on Product-Focused Software Process Improvement (PROFES 2025). To cite the paper, please check and refer to the PROFES 2025 proceedings"
+  },
+  {
+    "arxivId": "2510.14623",
+    "title": "LeapFactual: Reliable Visual Counterfactual Explanation Using Conditional Flow Matching",
+    "abstract": "The growing integration of machine learning (ML) and artificial intelligence (AI) models into high-stakes domains such as healthcare and scientific research calls for models that are not only accurate but also interpretable. Among the existing explainable methods, counterfactual explanations offer interpretability by identifying minimal changes to inputs that would alter a model's prediction, thus providing deeper insights. However, current counterfactual generation methods suffer from critical limitations, including gradient vanishing, discontinuous latent spaces, and an overreliance on the alignment between learned and true decision boundaries. To overcome these limitations, we propose LeapFactual, a novel counterfactual explanation algorithm based on conditional flow matching. LeapFactual generates reliable and informative counterfactuals, even when true and learned decision boundaries diverge. Following a model-agnostic approach, LeapFactual is not limited to models with differentiable loss functions. It can even handle human-in-the-loop systems, expanding the scope of counterfactual explanations to domains that require the participation of human annotators, such as citizen science. We provide extensive experiments on benchmark and real-world datasets showing that LeapFactual generates accurate and in-distribution counterfactual explanations that offer actionable insights. We observe, for instance, that our reliable counterfactual samples with labels aligning to ground truth can be beneficially used as new training data to enhance the model. The proposed method is broadly applicable and enhances both scientific knowledge discovery and non-expert interpretability.\n        △ Less",
+    "authors": [
+      "Zhuo Cao",
+      "Xuan Zhao",
+      "Lena Krieger",
+      "Hanno Scharr",
+      "Ira Assent"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14623",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14623.pdf",
+    "year": 2025,
+    "comments": "Comments:\nAccepted as a poster presentation at NeurIPS 2025. Camera-ready version. 10 pages, 7 figures"
+  },
+  {
+    "arxivId": "2510.14596",
+    "title": "Zero-Shot Wildlife Sorting Using Vision Transformers: Evaluating Clustering and Continuous Similarity Ordering",
+    "abstract": "Camera traps generate millions of wildlife images, yet many datasets contain species that are absent from existing classifiers. This work evaluates zero-shot approaches for organizing unlabeled wildlife imagery using self-supervised vision transformers, developed and tested within the Animal Detect platform for camera trap analysis. We compare unsupervised clustering methods (DBSCAN, GMM) across three architectures (CLIP, DINOv2, MegaDescriptor) combined with dimensionality reduction techniques (PCA, UMAP), and we demonstrate continuous 1D similarity ordering via t-SNE projection. On a 5-species test set with ground truth labels used only for evaluation, DINOv2 with UMAP and GMM achieves 88.6 percent accuracy (macro-F1 = 0.874), while 1D sorting reaches 88.2 percent coherence for mammals and birds and 95.2 percent for fish across 1,500 images. Based on these findings, we deployed continuous similarity ordering in production, enabling rapid exploratory analysis and accelerating manual annotation workflows for biodiversity monitoring.\n        △ Less",
+    "authors": [
+      "Hugo Markoff",
+      "Jevgenijs Galaktionovs"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14596",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14596.pdf",
+    "year": 2025,
+    "comments": "Comments:\nExtended abstract. Submitted to AICC: Workshop on AI for Climate and Conservation - EurIPS 2025 (non-archival)"
+  },
+  {
+    "arxivId": "2510.14594",
+    "title": "Hierarchical Re-Classification: Combining Animal Classification Models with Vision Transformers",
+    "abstract": "State-of-the-art animal classification models like SpeciesNet provide predictions across thousands of species but use conservative rollup strategies, resulting in many animals labeled at high taxonomic levels rather than species. We present a hierarchical re-classification system for the Animal Detect platform that combines SpeciesNet EfficientNetV2-M predictions with CLIP embeddings and metric learning to refine high-level taxonomic labels toward species-level identification. Our five-stage pipeline (high-confidence acceptance, bird override, centroid building, triplet-loss metric learning, and adaptive cosine-distance scoring) is evaluated on a segment of the LILA BC Desert Lion Conservation dataset (4,018 images, 15,031 detections). After recovering 761 bird detections from \"blank\" and \"animal\" labels, we re-classify 456 detections labeled animal, mammal, or blank with 96.5% accuracy, achieving species-level identification for 64.9 percent\n        △ Less",
+    "authors": [
+      "Hugo Markoff",
+      "Jevgenijs Galaktionovs"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14594",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14594.pdf",
+    "year": 2025,
+    "comments": "Comments:\nExtended abstract. Submitted to AICC: Workshop on AI for Climate and Conservation - EurIPS 2025 (non-archival)"
+  },
+  {
+    "arxivId": "2510.14591",
+    "title": "Just-In-Time Objectives: A General Approach for Specialized AI Interactions",
+    "abstract": "Large language models promise a broad set of functions, but when not given a specific objective, they default to milquetoast results such as drafting emails littered with cliches. We demonstrate that inferring the user's in-the-moment objective, then rapidly optimizing for that singular objective, enables LLMs to produce tools, interfaces, and responses that are more responsive and desired. We contribute an architecture for automatically inducing just-in-time objectives by passively observing user behavior, then steering downstream AI systems through generation and evaluation against this objective. Inducing just-in-time objectives (e.g., \"Clarify the abstract's research contribution\") enables automatic generation of tools, e.g., those that critique a draft based on relevant HCI methodologies, anticipate related researchers' reactions, or surface ambiguous terminology. In a series of experiments (N=14, N=205) on participants' own tasks, JIT objectives enable LLM outputs that achieve 66-86% win rates over typical LLMs, and in-person use sessions (N=17) confirm that JIT objectives produce specialized tools unique to each participant.\n        △ Less",
+    "authors": [
+      "Michelle S. Lam",
+      "Omar Shaikh",
+      "Hallie Xu",
+      "Alice Guo",
+      "Diyi Yang",
+      "Jeffrey Heer",
+      "James A. Landay",
+      "Michael S. Bernstein"
+    ],
+    "categories": [
+      "cs.HC",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14591",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14591.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14581",
+    "title": "Selective Labeling with False Discovery Rate Control",
+    "abstract": "Obtaining high-quality labels for large datasets is expensive, requiring massive annotations from human experts. While AI models offer a cost-effective alternative by predicting labels, their label quality is compromised by the unavoidable labeling errors. Existing methods mitigate this issue through selective labeling, where AI labels a subset and human labels the remainder. However, these methods lack theoretical guarantees on the quality of AI-assigned labels, often resulting in unacceptably high labeling error within the AI-labeled subset. To address this, we introduce \\textbf{Conformal Labeling}, a novel method to identify instances where AI predictions can be provably trusted. This is achieved by controlling the false discovery rate (FDR), the proportion of incorrect labels within the selected subset. In particular, we construct a conformal p-value for each test instance by comparing AI models' predicted confidence to those of calibration instances mislabeled by AI models. Then, we select test instances whose p-values are below a data-dependent threshold, certifying AI models' predictions as trustworthy. We provide theoretical guarantees that Conformal Labeling controls the FDR below the nominal level, ensuring that a predefined fraction of AI-assigned labels is correct on average. Extensive experiments demonstrate that our method achieves tight FDR control with high power across various tasks, including image and text labeling, and LLM QA.\n        △ Less",
+    "authors": [
+      "Huipeng Huang",
+      "Wenbo Liao",
+      "Huajun Xi",
+      "Hao Zeng",
+      "Mengchen Zhao",
+      "Hongxin Wei"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14581",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14581.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14560",
+    "title": "Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video",
+    "abstract": "Envision an AI capable of functioning in human-like settings, moving beyond mere observation to actively understand, anticipate, and proactively respond to unfolding events. Towards this vision, we focus on the innovative task where, given ego-streaming video input, an assistant proactively answers diverse, evolving questions at the opportune moment, while maintaining synchronized perception and reasoning. This task embodies three key properties: (1) Proactive Coherence, (2) Just-in-Time Responsiveness, and (3) Synchronized Efficiency. To evaluate and address these properties, we first introduce ESTP-Bench (Ego Streaming Proactive Benchmark) alongside the ESTP-F1 metric-a novel framework designed for their rigorous assessment. Secondly, we propose a comprehensive technical pipeline to enable models to tackle this challenging task. This pipeline comprises: (1) a data engine, (2) a multi-stage training strategy, and (3) a proactive dynamic compression technique. Our proposed model effectively addresses these critical properties while outperforming multiple baselines across diverse online and offline benchmarks. Project Page:https://zhangyl4.github.io/publications/eyes-wide-open/\n        △ Less",
+    "authors": [
+      "Yulin Zhang",
+      "Cheng Shi",
+      "Yang Wang",
+      "Sibei Yang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14560",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14560.pdf",
+    "year": 2025,
+    "comments": "Comments:\nAccepted at NeurIPS 2025 (preview; camera-ready in preparation)"
+  },
+  {
+    "arxivId": "2510.14538",
+    "title": "Symbol Grounding in Neuro-Symbolic AI: A Gentle Introduction to Reasoning Shortcuts",
+    "abstract": "Neuro-symbolic (NeSy) AI aims to develop deep neural networks whose predictions comply with prior knowledge encoding, e.g. safety or structural constraints. As such, it represents one of the most promising avenues for reliable and trustworthy AI. The core idea behind NeSy AI is to combine neural and symbolic steps: neural networks are typically responsible for mapping low-level inputs into high-level symbolic concepts, while symbolic reasoning infers predictions compatible with the extracted concepts and the prior knowledge. Despite their promise, it was recently shown that - whenever the concepts are not supervised directly - NeSy models can be affected by Reasoning Shortcuts (RSs). That is, they can achieve high label accuracy by grounding the concepts incorrectly. RSs can compromise the interpretability of the model's explanations, performance in out-of-distribution scenarios, and therefore reliability. At the same time, RSs are difficult to detect and prevent unless concept supervision is available, which is typically not the case. However, the literature on RSs is scattered, making it difficult for researchers and practitioners to understand and tackle this challenging problem. This overview addresses this issue by providing a gentle introduction to RSs, discussing their causes and consequences in intuitive terms. It also reviews and elucidates existing theoretical characterizations of this phenomenon. Finally, it details methods for dealing with RSs, including mitigation and awareness strategies, and maps their benefits and limitations. By reformulating advanced material in a digestible form, this overview aims to provide a unifying perspective on RSs to lower the bar to entry for tackling them. Ultimately, we hope this overview contributes to the development of reliable NeSy and trustworthy AI models.\n        △ Less",
+    "authors": [
+      "Emanuele Marconato",
+      "Samuele Bortolotti",
+      "Emile van Krieken",
+      "Paolo Morettin",
+      "Elena Umili",
+      "Antonio Vergari",
+      "Efthymia Tsamoura",
+      "Andrea Passerini",
+      "Stefano Teso"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14538",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14538.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14537",
+    "title": "JSPLIT: A Taxonomy-based Solution for Prompt Bloating in Model Context Protocol",
+    "abstract": "AI systems are continually evolving and advancing, and user expectations are concurrently increasing, with a growing demand for interactions that go beyond simple text-based interaction with Large Language Models (LLMs). Today's applications often require LLMs to interact with external tools, marking a shift toward more complex agentic systems. To support this, standards such as the Model Context Protocol (MCP) have emerged, enabling agents to access tools by including a specification of the capabilities of each tool within the prompt. Although this approach expands what agents can do, it also introduces a growing problem: prompt bloating. As the number of tools increases, the prompts become longer, leading to high prompt token costs, increased latency, and reduced task success resulting from the selection of tools irrelevant to the prompt. To address this issue, we introduce JSPLIT, a taxonomy-driven framework designed to help agents manage prompt size more effectively when using large sets of MCP tools. JSPLIT organizes the tools into a hierarchical taxonomy and uses the user's prompt to identify and include only the most relevant tools, based on both the query and the taxonomy structure. In this paper, we describe the design of the taxonomy, the tool selection algorithm, and the dataset used to evaluate JSPLIT. Our results show that JSPLIT significantly reduces prompt size without significantly compromising the agent's ability to respond effectively. As the number of available tools for the agent grows substantially, JSPLIT even improves the tool selection accuracy of the agent, effectively reducing costs while simultaneously improving task success in high-complexity agent environments.\n        △ Less",
+    "authors": [
+      "Emanuele Antonioni",
+      "Stefan Markovic",
+      "Anirudha Shankar",
+      "Jaime Bernardo",
+      "Lovro Markovic",
+      "Silvia Pareti",
+      "Benedetto Proietti"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14537",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14537.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14532",
+    "title": "Towards Generalist Intelligence in Dentistry: Vision Foundation Models for Oral and Maxillofacial Radiology",
+    "abstract": "Oral and maxillofacial radiology plays a vital role in dental healthcare, but radiographic image interpretation is limited by a shortage of trained professionals. While AI approaches have shown promise, existing dental AI systems are restricted by their single-modality focus, task-specific design, and reliance on costly labeled data, hindering their generalization across diverse clinical scenarios. To address these challenges, we introduce DentVFM, the first family of vision foundation models (VFMs) designed for dentistry. DentVFM generates task-agnostic visual representations for a wide range of dental applications and uses self-supervised learning on DentVista, a large curated dental imaging dataset with approximately 1.6 million multi-modal radiographic images from various medical centers. DentVFM includes 2D and 3D variants based on the Vision Transformer (ViT) architecture. To address gaps in dental intelligence assessment and benchmarks, we introduce DentBench, a comprehensive benchmark covering eight dental subspecialties, more diseases, imaging modalities, and a wide geographical distribution. DentVFM shows impressive generalist intelligence, demonstrating robust generalization to diverse dental tasks, such as disease diagnosis, treatment analysis, biomarker identification, and anatomical landmark detection and segmentation. Experimental results indicate DentVFM significantly outperforms supervised, self-supervised, and weakly supervised baselines, offering superior generalization, label efficiency, and scalability. Additionally, DentVFM enables cross-modality diagnostics, providing more reliable results than experienced dentists in situations where conventional imaging is unavailable. DentVFM sets a new paradigm for dental AI, offering a scalable, adaptable, and label-efficient model to improve intelligent dental healthcare and address critical gaps in global oral healthcare.\n        △ Less",
+    "authors": [
+      "Xinrui Huang",
+      "Fan Xiao",
+      "Dongming He",
+      "Anqi Gao",
+      "Dandan Li",
+      "Xiaofan Zhang",
+      "Shaoting Zhang",
+      "Xudong Wang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14532",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14532.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14525",
+    "title": "Real-Time Surgical Instrument Defect Detection via Non-Destructive Testing",
+    "abstract": "Defective surgical instruments pose serious risks to sterility, mechanical integrity, and patient safety, increasing the likelihood of surgical complications. However, quality control in surgical instrument manufacturing often relies on manual inspection, which is prone to human error and inconsistency. This study introduces SurgScan, an AI-powered defect detection framework for surgical instruments. Using YOLOv8, SurgScan classifies defects in real-time, ensuring high accuracy and industrial scalability. The model is trained on a high-resolution dataset of 102,876 images, covering 11 instrument types and five major defect categories. Extensive evaluation against state-of-the-art CNN architectures confirms that SurgScan achieves the highest accuracy (99.3%) with real-time inference speeds of 4.2-5.8 ms per image, making it suitable for industrial deployment. Statistical analysis demonstrates that contrast-enhanced preprocessing significantly improves defect detection, addressing key limitations in visual inspection. SurgScan provides a scalable, cost-effective AI solution for automated quality control, reducing reliance on manual inspection while ensuring compliance with ISO 13485 and FDA standards, paving the way for enhanced defect detection in medical manufacturing.\n        △ Less",
+    "authors": [
+      "Qurrat Ul Ain",
+      "Atif Aftab Ahmed Jilani",
+      "Zunaira Shafqat",
+      "Nigar Azhar Butt"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14525",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14525.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14513",
+    "title": "State Your Intention to Steer Your Attention: An AI Assistant for Intentional Digital Living",
+    "abstract": "When working on digital devices, people often face distractions that can lead to a decline in productivity and efficiency, as well as negative psychological and emotional impacts. To address this challenge, we introduce a novel Artificial Intelligence (AI) assistant that elicits a user's intention, assesses whether ongoing activities are in line with that intention, and provides gentle nudges when deviations occur. The system leverages a large language model to analyze screenshots, application titles, and URLs, issuing notifications when behavior diverges from the stated goal. Its detection accuracy is refined through initial clarification dialogues and continuous user feedback. In a three-week, within-subjects field deployment with 22 participants, we compared our assistant to both a rule-based intent reminder system and a passive baseline that only logged activity. Results indicate that our AI assistant effectively supports users in maintaining focus and aligning their digital behavior with their intentions. Our source code is publicly available at this url https://intentassistant.github.io\n        △ Less",
+    "authors": [
+      "Juheon Choi",
+      "Juyoung Lee",
+      "Jian Kim",
+      "Chanyoung Kim",
+      "Taewon Min",
+      "W. Bradley Knox",
+      "Min Kyung Lee",
+      "Kimin Lee"
+    ],
+    "categories": [
+      "cs.HC",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14513",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14513.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14512",
+    "title": "Helmsman: Autonomous Synthesis of Federated Learning Systems via Multi-Agent Collaboration",
+    "abstract": "Federated Learning (FL) offers a powerful paradigm for training models on decentralized data, but its promise is often undermined by the immense complexity of designing and deploying robust systems. The need to select, combine, and tune strategies for multifaceted challenges like data heterogeneity and system constraints has become a critical bottleneck, resulting in brittle, bespoke solutions. To address this, we introduce Helmsman, a novel multi-agent system that automates the end-to-end synthesis of federated learning systems from high-level user specifications. It emulates a principled research and development workflow through three collaborative phases: (1) interactive human-in-the-loop planning to formulate a sound research plan, (2) modular code generation by supervised agent teams, and (3) a closed-loop of autonomous evaluation and refinement in a sandboxed simulation environment. To facilitate rigorous evaluation, we also introduce AgentFL-Bench, a new benchmark comprising 16 diverse tasks designed to assess the system-level generation capabilities of agentic systems in FL. Extensive experiments demonstrate that our approach generates solutions competitive with, and often superior to, established hand-crafted baselines. Our work represents a significant step towards the automated engineering of complex decentralized AI systems.\n        △ Less",
+    "authors": [
+      "Haoyuan Li",
+      "Mathias Funk",
+      "Aaqib Saeed"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14512",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14512.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14465",
+    "title": "Towards Automated Governance: A DSL for Human-Agent Collaboration in Software Projects",
+    "abstract": "The stakeholders involved in software development are becoming increasingly diverse, with both human contributors from varied backgrounds and AI-powered agents collaborating together in the process. This situation presents unique governance challenges, particularly in Open-Source Software (OSS) projects, where explicit policies are often lacking or unclear. This paper presents the vision and foundational concepts for a novel Domain-Specific Language (DSL) designed to define and enforce rich governance policies in systems involving diverse stakeholders, including agents. This DSL offers a pathway towards more robust, adaptable, and ultimately automated governance, paving the way for more effective collaboration in software projects, especially OSS ones.\n        △ Less",
+    "authors": [
+      "Adem Ait",
+      "Gwendal Jouneaux",
+      "Javier Luis Cánovas Izquierdo",
+      "Jordi Cabot"
+    ],
+    "categories": [
+      "cs.SE"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14465",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14465.pdf",
+    "year": 2025,
+    "comments": "Comments:\nAccepted in the 40th IEEE/ACM International Conference on Automated Software Engineering, ASE 2025"
+  },
+  {
+    "arxivId": "2510.14457",
+    "title": "Closing the Loop: An Instructor-in-the-Loop AI Assistance System for Supporting Student Help-Seeking in Programming Education",
+    "abstract": "Timely and high-quality feedback is essential for effective learning in programming courses; yet, providing such support at scale remains a challenge. While AI-based systems offer scalable and immediate help, their responses can occasionally be inaccurate or insufficient. Human instructors, in contrast, may bring more valuable expertise but are limited in time and availability. To address these limitations, we present a hybrid help framework that integrates AI-generated hints with an escalation mechanism, allowing students to request feedback from instructors when AI support falls short. This design leverages the strengths of AI for scale and responsiveness while reserving instructor effort for moments of greatest need. We deployed this tool in a data science programming course with 82 students. We observe that out of the total 673 AI-generated hints, students rated 146 (22%) as unhelpful. Among those, only 16 (11%) of the cases were escalated to the instructors. A qualitative investigation of instructor responses showed that those feedback instances were incorrect or insufficient roughly half of the time. This finding suggests that when AI support fails, even instructors with expertise may need to pay greater attention to avoid making mistakes. We will publicly release the tool for broader adoption and enable further studies in other classrooms. Our work contributes a practical approach to scaling high-quality support and informs future efforts to effectively integrate AI and humans in education.\n        △ Less",
+    "authors": [
+      "Tung Phung",
+      "Heeryung Choi",
+      "Mengyan Wu",
+      "Christopher Brooks",
+      "Sumit Gulwani",
+      "Adish Singla"
+    ],
+    "categories": [
+      "cs.CY"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14457",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14457.pdf",
+    "year": 2025,
+    "comments": "Comments:\nPreprint of the SIGCSE'26 paper"
+  },
+  {
+    "arxivId": "2510.14455",
+    "title": "Coder as Editor: Code-driven Interpretable Molecular Optimization",
+    "abstract": "Molecular optimization is a central task in drug discovery that requires precise structural reasoning and domain knowledge. While large language models (LLMs) have shown promise in generating high-level editing intentions in natural language, they often struggle to faithfully execute these modifications-particularly when operating on non-intuitive representations like SMILES. We introduce MECo, a framework that bridges reasoning and execution by translating editing actions into executable code. MECo reformulates molecular optimization for LLMs as a cascaded framework: generating human-interpretable editing intentions from a molecule and property goal, followed by translating those intentions into executable structural edits via code generation. Our approach achieves over 98% accuracy in reproducing held-out realistic edits derived from chemical reactions and target-specific compound pairs. On downstream optimization benchmarks spanning physicochemical properties and target activities, MECo substantially improves consistency by 38-86 percentage points to 90%+ and achieves higher success rates over SMILES-based baselines while preserving structural similarity. By aligning intention with execution, MECo enables consistent, controllable and interpretable molecular design, laying the foundation for high-fidelity feedback loops and collaborative human-AI workflows in drug discovery.\n        △ Less",
+    "authors": [
+      "Wenyu Zhu",
+      "Chengzhu Li",
+      "Xiaohe Tian",
+      "Yifan Wang",
+      "Yinjun Jia",
+      "Jianhui Wang",
+      "Bowen Gao",
+      "Ya-Qin Zhang",
+      "Wei-Ying Ma",
+      "Yanyan Lan"
+    ],
+    "categories": [
+      "cs.LG",
+      "q-bio.BM"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14455",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14455.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14443",
+    "title": "Big Data Approaches to Bovine Bioacoustics: A FAIR-Compliant Dataset and Scalable ML Framework for Precision Livestock Welfare",
+    "abstract": "The convergence of IoT sensing, edge computing, and machine learning is transforming precision livestock farming. Yet bioacoustic data streams remain underused because of computational complexity and ecological validity challenges. We present one of the most comprehensive bovine vocalization datasets to date, with 569 curated clips covering 48 behavioral classes, recorded across three commercial dairy farms using multiple microphone arrays and expanded to 2900 samples through domain informed augmentation. This FAIR compliant resource addresses major Big Data challenges - volume (90 hours of recordings, 65.6 GB), variety (multi farm and multi zone acoustics), velocity (real time processing), and veracity (noise robust feature extraction). Our distributed processing framework integrates advanced denoising using iZotope RX, multimodal synchronization through audio and video alignment, and standardized feature engineering with 24 acoustic descriptors generated from Praat, librosa, and openSMILE. Preliminary benchmarks reveal distinct class level acoustic patterns for estrus detection, distress classification, and maternal communication. The datasets ecological realism, reflecting authentic barn acoustics rather than controlled settings, ensures readiness for field deployment. This work establishes a foundation for animal centered AI, where bioacoustic data enable continuous and non invasive welfare assessment at industrial scale. By releasing standardized pipelines and detailed metadata, we promote reproducible research that connects Big Data analytics, sustainable agriculture, and precision livestock management. The framework supports UN SDG 9, showing how data science can turn traditional farming into intelligent, welfare optimized systems that meet global food needs while upholding ethical animal care.\n        △ Less",
+    "authors": [
+      "Mayuri Kate",
+      "Suresh Neethirajan"
+    ],
+    "categories": [
+      "cs.SD",
+      "cs.AI",
+      "eess.AS"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14443",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14443.pdf",
+    "year": 2025,
+    "comments": "Comments:\n40 pages, 14 figures, 9 Tables"
+  },
+  {
+    "arxivId": "2510.14401",
+    "title": "The Role of Social Learning and Collective Norm Formation in Fostering Cooperation in LLM Multi-Agent Systems",
+    "abstract": "A growing body of multi-agent studies with Large Language Models (LLMs) explores how norms and cooperation emerge in mixed-motive scenarios, where pursuing individual gain can undermine the collective good. While prior work has explored these dynamics in both richly contextualized simulations and simplified game-theoretic environments, most LLM systems featuring common-pool resource (CPR) games provide agents with explicit reward functions directly tied to their actions. In contrast, human cooperation often emerges without full visibility into payoffs and population, relying instead on heuristics, communication, and punishment. We introduce a CPR simulation framework that removes explicit reward signals and embeds cultural-evolutionary mechanisms: social learning (adopting strategies and beliefs from successful peers) and norm-based punishment, grounded in Ostrom's principles of resource governance. Agents also individually learn from the consequences of harvesting, monitoring, and punishing via environmental feedback, enabling norms to emerge endogenously. We establish the validity of our simulation by reproducing key findings from existing studies on human behavior. Building on this, we examine norm evolution across a 2\\times2 grid of environmental and social initialisations (resource-rich vs. resource-scarce; altruistic vs. selfish) and benchmark how agentic societies comprised of different LLMs perform under these conditions. Our results reveal systematic model differences in sustaining cooperation and norm formation, positioning the framework as a rigorous testbed for studying emergent norms in mixed-motive LLM societies. Such analysis can inform the design of AI systems deployed in social and organizational contexts, where alignment with cooperative norms is critical for stability, fairness, and effective governance of AI-mediated environments.\n        △ Less",
+    "authors": [
+      "Prateek Gupta",
+      "Qiankun Zhong",
+      "Hiromu Yakura",
+      "Thomas Eisenmann",
+      "Iyad Rahwan"
+    ],
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14401",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14401.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14381",
+    "title": "Are My Optimized Prompts Compromised? Exploring Vulnerabilities of LLM-based Optimizers",
+    "abstract": "Large language model (LLM) systems now underpin everyday AI applications such as chatbots, computer-use assistants, and autonomous robots, where performance often depends on carefully designed prompts. LLM-based prompt optimizers reduce that effort by iteratively refining prompts from scored feedback, yet the security of this optimization stage remains underexamined. We present the first systematic analysis of poisoning risks in LLM-based prompt optimization. Using HarmBench, we find systems are substantially more vulnerable to manipulated feedback than to injected queries: feedback-based attacks raise attack success rate (ASR) by up to ΔASR = 0.48. We introduce a simple fake-reward attack that requires no access to the reward model and significantly increases vulnerability, and we propose a lightweight highlighting defense that reduces the fake-reward ΔASR from 0.23 to 0.07 without degrading utility. These results establish prompt optimization pipelines as a first-class attack surface and motivate stronger safeguards for feedback channels and optimization frameworks.\n        △ Less",
+    "authors": [
+      "Andrew Zhao",
+      "Reshmi Ghosh",
+      "Vitor Carvalho",
+      "Emily Lawton",
+      "Keegan Hines",
+      "Gao Huang",
+      "Jack W. Stokes"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL",
+      "cs.CR"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14381",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14381.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14369",
+    "title": "From Binary to Bilingual: How the National Weather Service is Using Artificial Intelligence to Develop a Comprehensive Translation Program",
+    "abstract": "To advance a Weather-Ready Nation, the National Weather Service (NWS) is developing a systematic translation program to better serve the 68.8 million people in the U.S. who do not speak English at home. This article outlines the foundation of an automated translation tool for NWS products, powered by artificial intelligence. The NWS has partnered with LILT, whose patented training process enables large language models (LLMs) to adapt neural machine translation (NMT) tools for weather terminology and messaging. Designed for scalability across Weather Forecast Offices (WFOs) and National Centers, the system is currently being developed in Spanish, Simplified Chinese, Vietnamese, and other widely spoken non-English languages. Rooted in best practices for multilingual risk communication, the system provides accurate, timely, and culturally relevant translations, significantly reducing manual translation time and easing operational workloads across the NWS. To guide the distribution of these products, GIS mapping was used to identify language needs across different NWS regions, helping prioritize resources for the communities that need them most. We also integrated ethical AI practices throughout the program's design, ensuring that transparency, fairness, and human oversight guide how automated translations are created, evaluated, and shared with the public. This work has culminated into a website featuring experimental multilingual NWS products, including translated warnings, 7-day forecasts, and educational campaigns, bringing the country one step closer to a national warning system that reaches all Americans.\n        △ Less",
+    "authors": [
+      "Joseph E. Trujillo-Falcon",
+      "Monica L. Bozeman",
+      "Liam E. Llewellyn",
+      "Samuel T. Halvorson",
+      "Meryl Mizell",
+      "Stuti Deshpande",
+      "Bob Manning",
+      "Todd Fagin"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CY",
+      "cs.HC"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14369",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14369.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14359",
+    "title": "AI for Service: Proactive Assistance with AI Glasses",
+    "abstract": "In an era where AI is evolving from a passive tool into an active and adaptive companion, we introduce AI for Service (AI4Service), a new paradigm that enables proactive and real-time assistance in daily life. Existing AI services remain largely reactive, responding only to explicit user commands. We argue that a truly intelligent and helpful assistant should be capable of anticipating user needs and taking actions proactively when appropriate. To realize this vision, we propose Alpha-Service, a unified framework that addresses two fundamental challenges: Know When to intervene by detecting service opportunities from egocentric video streams, and Know How to provide both generalized and personalized services. Inspired by the von Neumann computer architecture and based on AI glasses, Alpha-Service consists of five key components: an Input Unit for perception, a Central Processing Unit for task scheduling, an Arithmetic Logic Unit for tool utilization, a Memory Unit for long-term personalization, and an Output Unit for natural human interaction. As an initial exploration, we implement Alpha-Service through a multi-agent system deployed on AI glasses. Case studies, including a real-time Blackjack advisor, a museum tour guide, and a shopping fit assistant, demonstrate its ability to seamlessly perceive the environment, infer user intent, and provide timely and useful assistance without explicit prompts.\n        △ Less",
+    "authors": [
+      "Zichen Wen",
+      "Yiyu Wang",
+      "Chenfei Liao",
+      "Boxue Yang",
+      "Junxian Li",
+      "Weifeng Liu",
+      "Haocong He",
+      "Bolong Feng",
+      "Xuyang Liu",
+      "Yuanhuiyi Lyu",
+      "Xu Zheng",
+      "Xuming Hu",
+      "Linfeng Zhang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14359",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14359.pdf",
+    "year": 2025,
+    "comments": "Comments:\n24 pages, 5 figures, work in progress"
+  },
+  {
+    "arxivId": "2510.14353",
+    "title": "CURE: Confidence-driven Unified Reasoning Ensemble Framework for Medical Question Answering",
+    "abstract": "High-performing medical Large Language Models (LLMs) typically require extensive fine-tuning with substantial computational resources, limiting accessibility for resource-constrained healthcare institutions. This study introduces a confidence-driven multi-model framework that leverages model diversity to enhance medical question answering without fine-tuning. Our framework employs a two-stage architecture: a confidence detection module assesses the primary model's certainty, and an adaptive routing mechanism directs low-confidence queries to Helper models with complementary knowledge for collaborative reasoning. We evaluate our approach using Qwen3-30B-A3B-Instruct, Phi-4 14B, and Gemma 2 12B across three medical benchmarks; MedQA, MedMCQA, and PubMedQA. Result demonstrate that our framework achieves competitive performance, with particularly strong results in PubMedQA (95.0\\%) and MedMCQA (78.0\\%). Ablation studies confirm that confidence-aware routing combined with multi-model collaboration substantially outperforms single-model approaches and uniform reasoning strategies. This work establishes that strategic model collaboration offers a practical, computationally efficient pathway to improve medical AI systems, with significant implications for democratizing access to advanced medical AI in resource-limited settings.\n        △ Less",
+    "authors": [
+      "Ziad Elshaer",
+      "Essam A. Rashed"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "physics.med-ph"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14353",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14353.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14340",
+    "title": "A Density-Informed Multimodal Artificial Intelligence Framework for Improving Breast Cancer Detection Across All Breast Densities",
+    "abstract": "Mammography, the current standard for breast cancer screening, has reduced sensitivity in women with dense breast tissue, contributing to missed or delayed diagnoses. Thermalytix, an AI-based thermal imaging modality, captures functional vascular and metabolic cues that may complement mammographic structural data. This study investigates whether a breast density-informed multi-modal AI framework can improve cancer detection by dynamically selecting the appropriate imaging modality based on breast tissue composition. A total of 324 women underwent both mammography and thermal imaging. Mammography images were analyzed using a multi-view deep learning model, while Thermalytix assessed thermal images through vascular and thermal radiomics. The proposed framework utilized Mammography AI for fatty breasts and Thermalytix AI for dense breasts, optimizing predictions based on tissue type. This multi-modal AI framework achieved a sensitivity of 94.55% (95% CI: 88.54-100) and specificity of 79.93% (95% CI: 75.14-84.71), outperforming standalone mammography AI (sensitivity 81.82%, specificity 86.25%) and Thermalytix AI (sensitivity 92.73%, specificity 75.46%). Importantly, the sensitivity of Mammography dropped significantly in dense breasts (67.86%) versus fatty breasts (96.30%), whereas Thermalytix AI maintained high and consistent sensitivity in both (92.59% and 92.86%, respectively). This demonstrates that a density-informed multi-modal AI framework can overcome key limitations of unimodal screening and deliver high performance across diverse breast compositions. The proposed framework is interpretable, low-cost, and easily deployable, offering a practical path to improving breast cancer screening outcomes in both high-resource and resource-limited settings.\n        △ Less",
+    "authors": [
+      "Siva Teja Kakileti",
+      "Bharath Govindaraju",
+      "Sudhakar Sampangi",
+      "Geetha Manjunath"
+    ],
+    "categories": [
+      "eess.IV",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14340",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14340.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14308",
+    "title": "ReUseIt: Synthesizing Reusable AI Agent Workflows for Web Automation",
+    "abstract": "AI-powered web agents have the potential to automate repetitive tasks, such as form filling, information retrieval, and scheduling, but they struggle to reliably execute these tasks without human intervention, requiring users to provide detailed guidance during every run. We address this limitation by automatically synthesizing reusable workflows from an agent's successful and failed attempts. These workflows incorporate execution guards that help agents detect and fix errors while keeping users informed of progress and issues. Our approach enables agents to successfully complete repetitive tasks of the same type with minimal intervention, increasing the success rates from 24.2% to 70.1% across fifteen tasks. To evaluate this approach, we invited nine users and found that our agent helped them complete web tasks with a higher success rate and less guidance compared to two baseline methods, as well as allowed users to easily monitor agent behavior and understand failures.\n        △ Less",
+    "authors": [
+      "Yimeng Liu",
+      "Misha Sra",
+      "Jeevana Priya Inala",
+      "Chenglong Wang"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14308",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14308.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14287",
+    "title": "Enhancing Time-Series Anomaly Detection by Integrating Spectral-Residual Bottom-Up Attention with Reservoir Computing",
+    "abstract": "Reservoir computing (RC) establishes the basis for the processing of time-series data by exploiting the high-dimensional spatiotemporal response of a recurrent neural network to an input signal. In particular, RC trains only the output layer weights. This simplicity has drawn attention especially in Edge Artificial Intelligence (AI) applications. Edge AI enables time-series anomaly detection in real time, which is important because detection delays can lead to serious incidents. However, achieving adequate anomaly-detection performance with RC alone may require an unacceptably large reservoir on resource-constrained edge devices. Without enlarging the reservoir, attention mechanisms can improve accuracy, although they may require substantial computation and undermine the learning efficiency of RC. In this study, to improve the anomaly detection performance of RC without sacrificing learning efficiency, we propose a spectral residual RC (SR-RC) that integrates the spectral residual (SR) method - a learning-free, bottom-up attention mechanism - with RC. We demonstrated that SR-RC outperformed conventional RC and logistic-regression models based on values extracted by the SR method across benchmark tasks and real-world time-series datasets. Moreover, because the SR method, similarly to RC, is well suited for hardware implementation, SR-RC suggests a practical direction for deploying RC as Edge AI for time-series anomaly detection.\n        △ Less",
+    "authors": [
+      "Hayato Nihei",
+      "Sou Nobukawa",
+      "Yusuke Sakemi",
+      "Kazuyuki Aihara"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14287",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14287.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14277",
+    "title": "GenLARP: Enabling Immersive Live Action Role-Play through LLM-Generated Worlds and Characters",
+    "abstract": "We introduce GenLARP, a virtual reality (VR) system that transforms personalized stories into immersive live action role-playing (LARP) experiences. GenLARP enables users to act as both creators and players, allowing them to design characters based on their descriptions and live in the story world. Generative AI and agents powered by Large Language Models (LLMs) enrich these experiences.\n        △ Less",
+    "authors": [
+      "Yichen Yu",
+      "Yifan Jiang",
+      "Mandy Lui",
+      "Qiao Jin"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "publishedDate": "2025-10-16",
+    "submittedDate": "2025-10-16",
+    "url": "https://arxiv.org/abs/2510.14277",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14277.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14247",
+    "title": "VisAider: AI-Assisted Context-Aware Visualization Support for Data Presentations",
+    "abstract": "Effective real-time data presentation is essential in small-group interactive contexts, where discussions evolve dynamically and presenters must adapt visualizations to shifting audience interests. However, most existing interactive visualization systems rely on fixed mappings between user actions and visualization commands, limiting their ability to support richer operations such as changing visualization types, adjusting data transformations, or incorporating additional datasets on the fly during live presentations. This work-in-progress paper presents VisAider, an AI-assisted interactive data presentation prototype that continuously analyzes the live presentation context, including the available dataset, active visualization, ongoing conversation, and audience profile, to generate ranked suggestions for relevant visualization aids. Grounded in a formative study with experienced data analysts, we identified key challenges in adapting visual content in real time and distilled design considerations to guide system development. A prototype implementation demonstrates the feasibility of this approach in simulated scenarios, and preliminary testing highlights challenges in inferring appropriate data transformations, resolving ambiguous visualization tasks, and achieving low-latency responsiveness. Ongoing work focuses on addressing these limitations, integrating the system into presentation environments, and preparing a summative user study to evaluate usability and communicative impact.\n        △ Less",
+    "authors": [
+      "Kentaro Takahira",
+      "Yuki Ueno"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "publishedDate": "2025-10-15",
+    "submittedDate": "2025-10-15",
+    "url": "https://arxiv.org/abs/2510.14247",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14247.pdf",
+    "year": 2025,
+    "comments": "N/A"
+  },
+  {
+    "arxivId": "2510.14232",
+    "title": "Scaling Test-Time Compute to Achieve IOI Gold Medal with Open-Weight Models",
+    "abstract": "Competitive programming has become a rigorous benchmark for evaluating the reasoning and problem-solving capabilities of large language models (LLMs). The International Olympiad in Informatics (IOI) stands out as one of the most prestigious annual competitions in competitive programming and has become a key benchmark for comparing human and AI-level programming ability. While several proprietary models have been claimed to achieve gold medal-level performance at the IOI, often with undisclosed methods, achieving comparable results with open-weight models remains a significant challenge. In this paper, we present \\gencluster, a scalable and reproducible test-time compute framework that attains IOI gold-level performance using open-weight models. It combines large-scale generation, behavioral clustering, ranking, and a round-robin submission strategy to efficiently explore diverse solution spaces under limited validation budgets. Our experiments show that the performance of our proposed approach scales consistently with available compute, narrowing the gap between open and closed systems. Notably, we will show that GenCluster can achieve a gold medal at IOI 2025 for the first time with an open-weight model gpt-oss-120b, setting a new benchmark for transparent and reproducible evaluation of reasoning in LLMs.\n        △ Less",
+    "authors": [
+      "Mehrzad Samadi",
+      "Aleksander Ficek",
+      "Sean Narenthiran",
+      "Siddhartha Jain",
+      "Wasi Uddin Ahmad",
+      "Somshubra Majumdar",
+      "Vahid Noroozi",
+      "Boris Ginsburg"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "publishedDate": "2025-10-15",
+    "submittedDate": "2025-10-15",
+    "url": "https://arxiv.org/abs/2510.14232",
+    "pdfUrl": "https://arxiv.org/pdf/2510.14232.pdf",
+    "year": 2025,
+    "comments": "Comments:\n14 pages, 11 figures"
+  }
+]
