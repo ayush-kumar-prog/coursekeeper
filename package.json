@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@prisma/client": "^6.17.1",
+    "formidable": "^3.5.4",
+    "pdf-parse": "^2.4.3",
+    "prisma": "^6.17.1"
+  }
+}
