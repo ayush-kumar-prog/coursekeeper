@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:verify": "tsx prisma/verify-seed.ts",
+    "db:reset": "prisma migrate reset && npm run db:seed"
   },
   "dependencies": {
     "axios": "^1.12.2",
@@ -27,6 +30,10 @@
     "eslint-config-next": "15.5.6",
     "prisma": "^6.17.1",
     "tailwindcss": "^4",
+    "tsx": "^4.19.2",
     "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }
