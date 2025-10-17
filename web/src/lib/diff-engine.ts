@@ -31,7 +31,13 @@ export interface DiffChange {
   toTitle?: string;
   rationale: string;
   confidence: number;
-  evidence?: any[];
+  evidence?: Array<{
+    canonId?: string
+    title: string
+    url: string
+    venue: string
+    year: number
+  }>;
   lowEvidence?: boolean;
 }
 

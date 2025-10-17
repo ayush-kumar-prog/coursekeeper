@@ -4,7 +4,7 @@ import { PatchNotesWriter } from '@/lib/patch-writer'
 
 export async function POST(request: NextRequest) {
   try {
-    const { subjectId, year } = await request.json()
+    const { year } = await request.json()
     
     // FOR NOW: Use mock data to test the pipeline
     const mockBaseline = [
@@ -118,7 +118,7 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   return NextResponse.json({ 
     message: 'CourseKeeper Patch Notes API',
     endpoints: {

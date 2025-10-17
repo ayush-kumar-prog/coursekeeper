@@ -1,0 +1,1312 @@
+{
+  "generatedAt": "2025-10-17T21:46:01.642Z",
+  "totalTopics": 5,
+  "totalPapers": 50,
+  "topics": [
+    {
+      "id": "diffusion-models",
+      "name": "Diffusion Models",
+      "query": "diffusion models image generation",
+      "description": "Diffusion-based generative models for image synthesis and editing",
+      "paperCount": 10,
+      "papers": [
+        {
+          "arxivId": "2510.14944",
+          "title": "MetaBench: A Multi-task Benchmark for Assessing LLMs in Metabolomics",
+          "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities on general text; however, their proficiency in specialized scientific domains that require deep, interconnected knowledge remains largely uncharacterized. Metabolomics presents unique challenges with its complex biochemical pathways, heterogeneous identifier systems, and fragmented databases. To systematically evaluate LLM capabilities in this domain, we introduce MetaBench, the first benchmark for metabolomics assessment. Curated from authoritative public resources, MetaBench evaluates five capabilities essential for metabolomics research: knowledge, understanding, grounding, reasoning, and research. Our evaluation of 25 open- and closed-source LLMs reveals distinct performance patterns across metabolomics tasks: while models perform well on text generation tasks, cross-database identifier grounding remains challenging even with retrieval augmentation. Model performance also decreases on long-tail metabolites with sparse annotations. With MetaBench, we provide essential infrastructure for developing and evaluating metabolomics AI systems, enabling systematic progress toward reliable computational tools for metabolomics research.\n        △ Less",
+          "authors": [
+            "Yuxing Lu",
+            "Xukai Zhao",
+            "J. Ben Tamo",
+            "Micky C. Nnamdi",
+            "Rui Peng",
+            "Shuang Zeng",
+            "Xingyu Hu",
+            "Jinzhuo Wang",
+            "May D. Wang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.CE"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14944",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14944.pdf",
+          "year": 2025,
+          "comments": "Comments:\n22 pages, 6 figures, 4 tables"
+        },
+        {
+          "arxivId": "2510.14939",
+          "title": "Decoding in the presence of ISI without interleaving ORBGRAND AI",
+          "abstract": "Inter symbol interference (ISI), which occurs in a wide variety of channels, is a result of time dispersion. It can be mitigated by equalization which results in noise coloring. For such colored noise, we propose a decoder called Ordered Reliability Bit Guessing Random Additive Noise Decoding (ORBGRANDAI) which is inspired by the development of approximate independence in statistical physics. By foregoing interleaving, ORBGRAND-AI can deliver the same, or lower, block error rate (BLER) for the same amount of energy per information bit in an ISI channel as a state-of-the-art soft input decoder, such as Cyclic Redundancy Check Assisted-Successive Cancellation List (CA-SCL) decoding, with an interleaver. To assess the decoding performance of ORBGRAND-AI, we consider delay tap models and their associated colored noise. In particular, we examine a two-tap dicode ISI channel as well as an ISI channel derived from data from RFView, a physics-informed modeling and simulation tool. We investigate the dicode and RFView channel under a variety of imperfect channel state information assumptions and show that a second order autoregressive model adequately represents the RFView channel effect.\n        △ Less",
+          "authors": [
+            "Ken R. Duffy",
+            "Moritz Grundei",
+            "Jane A. Millward",
+            "Muralidhar Rangaswamy",
+            "Muriel Medard"
+          ],
+          "categories": [
+            "eess.SP"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14939",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14939.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14937",
+          "title": "AI-Powered Early Diagnosis of Mental Health Disorders from Real-World Clinical Conversations",
+          "abstract": "Mental health disorders remain among the leading cause of disability worldwide, yet conditions such as depression, anxiety, and Post-Traumatic Stress Disorder (PTSD) are frequently underdiagnosed or misdiagnosed due to subjective assessments, limited clinical resources, and stigma and low awareness. In primary care settings, studies show that providers misidentify depression or anxiety in over 60% of cases, highlighting the urgent need for scalable, accessible, and context-aware diagnostic tools that can support early detection and intervention. In this study, we evaluate the effectiveness of machine learning models for mental health screening using a unique dataset of 553 real-world, semistructured interviews, each paried with ground-truth diagnoses for major depressive episodes (MDE), anxiety disorders, and PTSD. We benchmark multiple model classes, including zero-shot prompting with GPT-4.1 Mini and MetaLLaMA, as well as fine-tuned RoBERTa models using LowRank Adaptation (LoRA). Our models achieve over 80% accuracy across diagnostic categories, with especially strongperformance on PTSD (up to 89% accuracy and 98% recall). We also find that using shorter context, focused context segments improves recall, suggesting that focused narrative cues enhance detection sensitivity. LoRA fine-tuning proves both efficient and effective, with lower-rank configurations (e.g., rank 8 and 16) maintaining competitive performance across evaluation metrics. Our results demonstrate that LLM-based models can offer substantial improvements over traditional self-report screening tools, providing a path toward low-barrier, AI-powerd early diagnosis. This work lays the groundwork for integrating machine learning into real-world clinical workflows, particularly in low-resource or high-stigma environments where access to timely mental health care is most limited.\n        △ Less",
+          "authors": [
+            "Jianfeng Zhu",
+            "Julina Maharjan",
+            "Xinyu Li",
+            "Karin G. Coifman",
+            "Ruoming Jin"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14937",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14937.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages 1 figure"
+        },
+        {
+          "arxivId": "2510.14936",
+          "title": "Circuit Insights: Towards Interpretability Beyond Activations",
+          "abstract": "The fields of explainable AI and mechanistic interpretability aim to uncover the internal structure of neural networks, with circuit discovery as a central tool for understanding model computations. Existing approaches, however, rely on manual inspection and remain limited to toy tasks. Automated interpretability offers scalability by analyzing isolated features and their activations, but it often misses interactions between features and depends strongly on external LLMs and dataset quality. Transcoders have recently made it possible to separate feature attributions into input-dependent and input-invariant components, providing a foundation for more systematic circuit analysis. Building on this, we propose WeightLens and CircuitLens, two complementary methods that go beyond activation-based analysis. WeightLens interprets features directly from their learned weights, removing the need for explainer models or datasets while matching or exceeding the performance of existing methods on context-independent features. CircuitLens captures how feature activations arise from interactions between components, revealing circuit-level dynamics that activation-only approaches cannot identify. Together, these methods increase interpretability robustness and enhance scalable mechanistic analysis of circuits while maintaining efficiency and quality.\n        △ Less",
+          "authors": [
+            "Elena Golimblevskaia",
+            "Aakriti Jain",
+            "Bruno Puri",
+            "Ammar Ibrahim",
+            "Wojciech Samek",
+            "Sebastian Lapuschkin"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14936",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14936.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14928",
+          "title": "Instruction Set Migration at Warehouse Scale",
+          "abstract": "Migrating codebases from one instruction set architecture (ISA) to another is a major engineering challenge. A recent example is the adoption of Arm (in addition to x86) across the major Cloud hyperscalers. Yet, this problem has seen limited attention by the academic community. Most work has focused on static and dynamic binary translation, and the traditional conventional wisdom has been that this is the primary challenge.\n  In this paper, we show that this is no longer the case. Modern ISA migrations can often build on a robust open-source ecosystem, making it possible to recompile all relevant software from scratch. This introduces a new and multifaceted set of challenges, which are different from binary translation.\n  By analyzing a large-scale migration from x86 to Arm at Google, spanning almost 40,000 code commits, we derive a taxonomy of tasks involved in ISA migration. We show how Google automated many of the steps involved, and demonstrate how AI can play a major role in automatically addressing these tasks. We identify tasks that remain challenging and highlight research challenges that warrant further attention.\n        △ Less",
+          "authors": [
+            "Eric Christopher",
+            "Kevin Crossan",
+            "Wolff Dobson",
+            "Chris Kennelly",
+            "Drew Lewis",
+            "Kun Lin",
+            "Martin Maas",
+            "Parthasarathy Ranganathan",
+            "Emma Rapati",
+            "Brian Yang"
+          ],
+          "categories": [
+            "cs.SE",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14928",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14928.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14884",
+          "title": "Learning When Not to Learn: Risk-Sensitive Abstention in Bandits with Unbounded Rewards",
+          "abstract": "In high-stakes AI applications, even a single action can cause irreparable damage. However, nearly all of sequential decision-making theory assumes that all errors are recoverable (e.g., by bounding rewards). Standard bandit algorithms that explore aggressively may cause irreparable damage when this assumption fails. Some prior work avoids irreparable errors by asking for help from a mentor, but a mentor may not always be available. In this work, we formalize a model of learning with unbounded rewards without a mentor as a two-action contextual bandit with an abstain option: at each round the agent observes an input and chooses either to abstain (always 0 reward) or to commit (execute a preexisting task policy). Committing yields rewards that are upper-bounded but can be arbitrarily negative, and the commit reward is assumed Lipschitz in the input. We propose a caution-based algorithm that learns when not to learn: it chooses a trusted region and commits only where the available evidence does not already certify harm. Under these conditions and i.i.d. inputs, we establish sublinear regret guarantees, theoretically demonstrating the effectiveness of cautious exploration for deploying learning agents safely in high-stakes environments.\n        △ Less",
+          "authors": [
+            "Sarah Liaw",
+            "Benjamin Plaut"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14884",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14884.pdf",
+          "year": 2025,
+          "comments": "Comments:\n16 pages, 1 figure; under submission"
+        },
+        {
+          "arxivId": "2510.14881",
+          "title": "The Gatekeeper Knows Enough",
+          "abstract": "Large Language Models (LLMs) are increasingly deployed as autonomous agents, yet their practical utility is fundamentally constrained by a limited context window and state desynchronization resulting from the LLMs' stateless nature and inefficient context management. These limitations lead to unreliable output, unpredictable behavior, and inefficient resource usage, particularly when interacting with large, structured, and sensitive knowledge systems such as codebases and documents. To address these challenges, we introduce the Gatekeeper Protocol, a novel, domain-agnostic framework that governs agent-system interactions. Our protocol mandates that the agent first operate and reason on a minimalist, low-fidelity \"latent state\" representation of the system to strategically request high-fidelity context on demand. All interactions are mediated through a unified JSON format that serves as a declarative, state-synchronized protocol, ensuring the agent's model of the system remains verifiably grounded in the system's reality. We demonstrate the efficacy of this protocol with Sage, a reference implementation of the Gatekeeper Protocol for software development. Our results show that this approach significantly increases agent reliability, improves computational efficiency by minimizing token consumption, and enables scalable interaction with complex systems, creating a foundational methodology for building more robust, predictable, and grounded AI agents for any structured knowledge domain.\n        △ Less",
+          "authors": [
+            "Fikresilase Wondmeneh Abebayew"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.IT"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14881",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14881.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages, 1 figure"
+        },
+        {
+          "arxivId": "2510.14871",
+          "title": "From Loop Nests to Silicon: Mapping AI Workloads onto AMD NPUs with MLIR-AIR",
+          "abstract": "General-purpose compilers abstract away parallelism, locality, and synchronization, limiting their effectiveness on modern spatial architectures. As modern computing architectures increasingly rely on fine-grained control over data movement, execution order, and compute placement for performance, compiler infrastructure must provide explicit mechanisms for orchestrating compute and data to fully exploit such architectures. We introduce MLIR-AIR, a novel, open-source compiler stack built on MLIR that bridges the semantic gap between high-level workloads and fine-grained spatial architectures such as AMD's NPUs. MLIR-AIR defines the AIR dialect, which provides structured representations for asynchronous and hierarchical operations across compute and memory resources. AIR primitives allow the compiler to orchestrate spatial scheduling, distribute computation across hardware regions, and overlap communication with computation without relying on ad hoc runtime coordination or manual scheduling. We demonstrate MLIR-AIR's capabilities through two case studies: matrix multiplication and the multi-head attention block from the LLaMA 2 model. For matrix multiplication, MLIR-AIR achieves up to 78.7% compute efficiency and generates implementations with performance almost identical to state-of-the-art, hand-optimized matrix multiplication written using the lower-level, close-to-metal MLIR-AIE framework. For multi-head attention, we demonstrate that the AIR interface supports fused implementations using approximately 150 lines of code, enabling tractable expression of complex workloads with efficient mapping to spatial hardware. MLIR-AIR transforms high-level structured control flow into spatial programs that efficiently utilize the compute fabric and memory hierarchy of an NPU, leveraging asynchronous execution, tiling, and communication overlap through compiler-managed scheduling.\n        △ Less",
+          "authors": [
+            "Erwei Wang",
+            "Samuel Bayliss",
+            "Andra Bisca",
+            "Zachary Blair",
+            "Sangeeta Chowdhary",
+            "Kristof Denolf",
+            "Jeff Fifield",
+            "Brandon Freiberger",
+            "Erika Hunhoff",
+            "Phil James-Roxby",
+            "Jack Lo",
+            "Joseph Melber",
+            "Stephen Neuendorffer",
+            "Eddie Richter",
+            "Andre Rosti",
+            "Javier Setoain",
+            "Gagandeep Singh",
+            "Endri Taka",
+            "Pranathi Vasireddy",
+            "Zhewen Yu",
+            "Niansong Zhang",
+            "Jinming Zhuang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AR",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14871",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14871.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14861",
+          "title": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
+          "abstract": "Modern science advances fastest when thought meets action. LabOS represents the first AI co-scientist that unites computational reasoning with physical experimentation through multimodal perception, self-evolving agents, and Entended-Reality(XR)-enabled human-AI collaboration. By connecting multi-model AI agents, smart glasses, and human-AI collaboration, LabOS allows AI to see what scientists see, understand experimental context, and assist in real-time execution. Across applications--from cancer immunotherapy target discovery to stem-cell engineering -- LabOS shows that AI can move beyond computational design to participation, turning the laboratory into an intelligent, collaborative environment where human and machine discovery evolve together.\n        △ Less",
+          "authors": [
+            "Le Cong",
+            "Zaixi Zhang",
+            "Xiaotong Wang",
+            "Yin Di",
+            "Ruofan Jin",
+            "Michal Gerasimiuk",
+            "Yinkai Wang",
+            "Ravi K. Dinesh",
+            "David Smerkous",
+            "Alex Smerkous",
+            "Xuekun Wu",
+            "Shilong Liu",
+            "Peishan Li",
+            "Yi Zhu",
+            "Simran Serrao",
+            "Ning Zhao",
+            "Imran A. Mohammad",
+            "John B. Sunwoo",
+            "Joseph C. Wu",
+            "Mengdi Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14861",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14861.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14846",
+          "title": "Where to Search: Measure the Prior-Structured Search Space of LLM Agents",
+          "abstract": "The generate-filter-refine (iterative paradigm) based on large language models (LLMs) has achieved progress in reasoning, programming, and program discovery in AI+Science. However, the effectiveness of search depends on where to search, namely, how to encode the domain prior into an operationally structured hypothesis space. To this end, this paper proposes a compact formal theory that describes and measures LLM-assisted iterative search guided by domain priors. We represent an agent as a fuzzy relation operator on inputs and outputs to capture feasible transitions; the agent is thereby constrained by a fixed safety envelope. To describe multi-step reasoning/search, we weight all reachable paths by a single continuation parameter and sum them to obtain a coverage generating function; this induces a measure of reachability difficulty; and it provides a geometric interpretation of search on the graph induced by the safety envelope. We further provide the simplest testable inferences and validate them via a majority-vote instantiation. This theory offers a workable language and operational tools to measure agents and their search spaces, proposing a systematic formal description of iterative search constructed by LLMs.\n        △ Less",
+          "authors": [
+            "Zhuo-Yang Song"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.LO"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14846",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14846.pdf",
+          "year": 2025,
+          "comments": "Comments:\n10 pages, 2 figures, 1 table"
+        }
+      ]
+    },
+    {
+      "id": "vision-language",
+      "name": "Vision-Language Models",
+      "query": "vision language models multimodal",
+      "description": "Multimodal models combining vision and language understanding",
+      "paperCount": 10,
+      "papers": [
+        {
+          "arxivId": "2510.14944",
+          "title": "MetaBench: A Multi-task Benchmark for Assessing LLMs in Metabolomics",
+          "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities on general text; however, their proficiency in specialized scientific domains that require deep, interconnected knowledge remains largely uncharacterized. Metabolomics presents unique challenges with its complex biochemical pathways, heterogeneous identifier systems, and fragmented databases. To systematically evaluate LLM capabilities in this domain, we introduce MetaBench, the first benchmark for metabolomics assessment. Curated from authoritative public resources, MetaBench evaluates five capabilities essential for metabolomics research: knowledge, understanding, grounding, reasoning, and research. Our evaluation of 25 open- and closed-source LLMs reveals distinct performance patterns across metabolomics tasks: while models perform well on text generation tasks, cross-database identifier grounding remains challenging even with retrieval augmentation. Model performance also decreases on long-tail metabolites with sparse annotations. With MetaBench, we provide essential infrastructure for developing and evaluating metabolomics AI systems, enabling systematic progress toward reliable computational tools for metabolomics research.\n        △ Less",
+          "authors": [
+            "Yuxing Lu",
+            "Xukai Zhao",
+            "J. Ben Tamo",
+            "Micky C. Nnamdi",
+            "Rui Peng",
+            "Shuang Zeng",
+            "Xingyu Hu",
+            "Jinzhuo Wang",
+            "May D. Wang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.CE"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14944",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14944.pdf",
+          "year": 2025,
+          "comments": "Comments:\n22 pages, 6 figures, 4 tables"
+        },
+        {
+          "arxivId": "2510.14939",
+          "title": "Decoding in the presence of ISI without interleaving ORBGRAND AI",
+          "abstract": "Inter symbol interference (ISI), which occurs in a wide variety of channels, is a result of time dispersion. It can be mitigated by equalization which results in noise coloring. For such colored noise, we propose a decoder called Ordered Reliability Bit Guessing Random Additive Noise Decoding (ORBGRANDAI) which is inspired by the development of approximate independence in statistical physics. By foregoing interleaving, ORBGRAND-AI can deliver the same, or lower, block error rate (BLER) for the same amount of energy per information bit in an ISI channel as a state-of-the-art soft input decoder, such as Cyclic Redundancy Check Assisted-Successive Cancellation List (CA-SCL) decoding, with an interleaver. To assess the decoding performance of ORBGRAND-AI, we consider delay tap models and their associated colored noise. In particular, we examine a two-tap dicode ISI channel as well as an ISI channel derived from data from RFView, a physics-informed modeling and simulation tool. We investigate the dicode and RFView channel under a variety of imperfect channel state information assumptions and show that a second order autoregressive model adequately represents the RFView channel effect.\n        △ Less",
+          "authors": [
+            "Ken R. Duffy",
+            "Moritz Grundei",
+            "Jane A. Millward",
+            "Muralidhar Rangaswamy",
+            "Muriel Medard"
+          ],
+          "categories": [
+            "eess.SP"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14939",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14939.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14937",
+          "title": "AI-Powered Early Diagnosis of Mental Health Disorders from Real-World Clinical Conversations",
+          "abstract": "Mental health disorders remain among the leading cause of disability worldwide, yet conditions such as depression, anxiety, and Post-Traumatic Stress Disorder (PTSD) are frequently underdiagnosed or misdiagnosed due to subjective assessments, limited clinical resources, and stigma and low awareness. In primary care settings, studies show that providers misidentify depression or anxiety in over 60% of cases, highlighting the urgent need for scalable, accessible, and context-aware diagnostic tools that can support early detection and intervention. In this study, we evaluate the effectiveness of machine learning models for mental health screening using a unique dataset of 553 real-world, semistructured interviews, each paried with ground-truth diagnoses for major depressive episodes (MDE), anxiety disorders, and PTSD. We benchmark multiple model classes, including zero-shot prompting with GPT-4.1 Mini and MetaLLaMA, as well as fine-tuned RoBERTa models using LowRank Adaptation (LoRA). Our models achieve over 80% accuracy across diagnostic categories, with especially strongperformance on PTSD (up to 89% accuracy and 98% recall). We also find that using shorter context, focused context segments improves recall, suggesting that focused narrative cues enhance detection sensitivity. LoRA fine-tuning proves both efficient and effective, with lower-rank configurations (e.g., rank 8 and 16) maintaining competitive performance across evaluation metrics. Our results demonstrate that LLM-based models can offer substantial improvements over traditional self-report screening tools, providing a path toward low-barrier, AI-powerd early diagnosis. This work lays the groundwork for integrating machine learning into real-world clinical workflows, particularly in low-resource or high-stigma environments where access to timely mental health care is most limited.\n        △ Less",
+          "authors": [
+            "Jianfeng Zhu",
+            "Julina Maharjan",
+            "Xinyu Li",
+            "Karin G. Coifman",
+            "Ruoming Jin"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14937",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14937.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages 1 figure"
+        },
+        {
+          "arxivId": "2510.14936",
+          "title": "Circuit Insights: Towards Interpretability Beyond Activations",
+          "abstract": "The fields of explainable AI and mechanistic interpretability aim to uncover the internal structure of neural networks, with circuit discovery as a central tool for understanding model computations. Existing approaches, however, rely on manual inspection and remain limited to toy tasks. Automated interpretability offers scalability by analyzing isolated features and their activations, but it often misses interactions between features and depends strongly on external LLMs and dataset quality. Transcoders have recently made it possible to separate feature attributions into input-dependent and input-invariant components, providing a foundation for more systematic circuit analysis. Building on this, we propose WeightLens and CircuitLens, two complementary methods that go beyond activation-based analysis. WeightLens interprets features directly from their learned weights, removing the need for explainer models or datasets while matching or exceeding the performance of existing methods on context-independent features. CircuitLens captures how feature activations arise from interactions between components, revealing circuit-level dynamics that activation-only approaches cannot identify. Together, these methods increase interpretability robustness and enhance scalable mechanistic analysis of circuits while maintaining efficiency and quality.\n        △ Less",
+          "authors": [
+            "Elena Golimblevskaia",
+            "Aakriti Jain",
+            "Bruno Puri",
+            "Ammar Ibrahim",
+            "Wojciech Samek",
+            "Sebastian Lapuschkin"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14936",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14936.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14928",
+          "title": "Instruction Set Migration at Warehouse Scale",
+          "abstract": "Migrating codebases from one instruction set architecture (ISA) to another is a major engineering challenge. A recent example is the adoption of Arm (in addition to x86) across the major Cloud hyperscalers. Yet, this problem has seen limited attention by the academic community. Most work has focused on static and dynamic binary translation, and the traditional conventional wisdom has been that this is the primary challenge.\n  In this paper, we show that this is no longer the case. Modern ISA migrations can often build on a robust open-source ecosystem, making it possible to recompile all relevant software from scratch. This introduces a new and multifaceted set of challenges, which are different from binary translation.\n  By analyzing a large-scale migration from x86 to Arm at Google, spanning almost 40,000 code commits, we derive a taxonomy of tasks involved in ISA migration. We show how Google automated many of the steps involved, and demonstrate how AI can play a major role in automatically addressing these tasks. We identify tasks that remain challenging and highlight research challenges that warrant further attention.\n        △ Less",
+          "authors": [
+            "Eric Christopher",
+            "Kevin Crossan",
+            "Wolff Dobson",
+            "Chris Kennelly",
+            "Drew Lewis",
+            "Kun Lin",
+            "Martin Maas",
+            "Parthasarathy Ranganathan",
+            "Emma Rapati",
+            "Brian Yang"
+          ],
+          "categories": [
+            "cs.SE",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14928",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14928.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14884",
+          "title": "Learning When Not to Learn: Risk-Sensitive Abstention in Bandits with Unbounded Rewards",
+          "abstract": "In high-stakes AI applications, even a single action can cause irreparable damage. However, nearly all of sequential decision-making theory assumes that all errors are recoverable (e.g., by bounding rewards). Standard bandit algorithms that explore aggressively may cause irreparable damage when this assumption fails. Some prior work avoids irreparable errors by asking for help from a mentor, but a mentor may not always be available. In this work, we formalize a model of learning with unbounded rewards without a mentor as a two-action contextual bandit with an abstain option: at each round the agent observes an input and chooses either to abstain (always 0 reward) or to commit (execute a preexisting task policy). Committing yields rewards that are upper-bounded but can be arbitrarily negative, and the commit reward is assumed Lipschitz in the input. We propose a caution-based algorithm that learns when not to learn: it chooses a trusted region and commits only where the available evidence does not already certify harm. Under these conditions and i.i.d. inputs, we establish sublinear regret guarantees, theoretically demonstrating the effectiveness of cautious exploration for deploying learning agents safely in high-stakes environments.\n        △ Less",
+          "authors": [
+            "Sarah Liaw",
+            "Benjamin Plaut"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14884",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14884.pdf",
+          "year": 2025,
+          "comments": "Comments:\n16 pages, 1 figure; under submission"
+        },
+        {
+          "arxivId": "2510.14881",
+          "title": "The Gatekeeper Knows Enough",
+          "abstract": "Large Language Models (LLMs) are increasingly deployed as autonomous agents, yet their practical utility is fundamentally constrained by a limited context window and state desynchronization resulting from the LLMs' stateless nature and inefficient context management. These limitations lead to unreliable output, unpredictable behavior, and inefficient resource usage, particularly when interacting with large, structured, and sensitive knowledge systems such as codebases and documents. To address these challenges, we introduce the Gatekeeper Protocol, a novel, domain-agnostic framework that governs agent-system interactions. Our protocol mandates that the agent first operate and reason on a minimalist, low-fidelity \"latent state\" representation of the system to strategically request high-fidelity context on demand. All interactions are mediated through a unified JSON format that serves as a declarative, state-synchronized protocol, ensuring the agent's model of the system remains verifiably grounded in the system's reality. We demonstrate the efficacy of this protocol with Sage, a reference implementation of the Gatekeeper Protocol for software development. Our results show that this approach significantly increases agent reliability, improves computational efficiency by minimizing token consumption, and enables scalable interaction with complex systems, creating a foundational methodology for building more robust, predictable, and grounded AI agents for any structured knowledge domain.\n        △ Less",
+          "authors": [
+            "Fikresilase Wondmeneh Abebayew"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.IT"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14881",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14881.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages, 1 figure"
+        },
+        {
+          "arxivId": "2510.14871",
+          "title": "From Loop Nests to Silicon: Mapping AI Workloads onto AMD NPUs with MLIR-AIR",
+          "abstract": "General-purpose compilers abstract away parallelism, locality, and synchronization, limiting their effectiveness on modern spatial architectures. As modern computing architectures increasingly rely on fine-grained control over data movement, execution order, and compute placement for performance, compiler infrastructure must provide explicit mechanisms for orchestrating compute and data to fully exploit such architectures. We introduce MLIR-AIR, a novel, open-source compiler stack built on MLIR that bridges the semantic gap between high-level workloads and fine-grained spatial architectures such as AMD's NPUs. MLIR-AIR defines the AIR dialect, which provides structured representations for asynchronous and hierarchical operations across compute and memory resources. AIR primitives allow the compiler to orchestrate spatial scheduling, distribute computation across hardware regions, and overlap communication with computation without relying on ad hoc runtime coordination or manual scheduling. We demonstrate MLIR-AIR's capabilities through two case studies: matrix multiplication and the multi-head attention block from the LLaMA 2 model. For matrix multiplication, MLIR-AIR achieves up to 78.7% compute efficiency and generates implementations with performance almost identical to state-of-the-art, hand-optimized matrix multiplication written using the lower-level, close-to-metal MLIR-AIE framework. For multi-head attention, we demonstrate that the AIR interface supports fused implementations using approximately 150 lines of code, enabling tractable expression of complex workloads with efficient mapping to spatial hardware. MLIR-AIR transforms high-level structured control flow into spatial programs that efficiently utilize the compute fabric and memory hierarchy of an NPU, leveraging asynchronous execution, tiling, and communication overlap through compiler-managed scheduling.\n        △ Less",
+          "authors": [
+            "Erwei Wang",
+            "Samuel Bayliss",
+            "Andra Bisca",
+            "Zachary Blair",
+            "Sangeeta Chowdhary",
+            "Kristof Denolf",
+            "Jeff Fifield",
+            "Brandon Freiberger",
+            "Erika Hunhoff",
+            "Phil James-Roxby",
+            "Jack Lo",
+            "Joseph Melber",
+            "Stephen Neuendorffer",
+            "Eddie Richter",
+            "Andre Rosti",
+            "Javier Setoain",
+            "Gagandeep Singh",
+            "Endri Taka",
+            "Pranathi Vasireddy",
+            "Zhewen Yu",
+            "Niansong Zhang",
+            "Jinming Zhuang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AR",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14871",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14871.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14861",
+          "title": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
+          "abstract": "Modern science advances fastest when thought meets action. LabOS represents the first AI co-scientist that unites computational reasoning with physical experimentation through multimodal perception, self-evolving agents, and Entended-Reality(XR)-enabled human-AI collaboration. By connecting multi-model AI agents, smart glasses, and human-AI collaboration, LabOS allows AI to see what scientists see, understand experimental context, and assist in real-time execution. Across applications--from cancer immunotherapy target discovery to stem-cell engineering -- LabOS shows that AI can move beyond computational design to participation, turning the laboratory into an intelligent, collaborative environment where human and machine discovery evolve together.\n        △ Less",
+          "authors": [
+            "Le Cong",
+            "Zaixi Zhang",
+            "Xiaotong Wang",
+            "Yin Di",
+            "Ruofan Jin",
+            "Michal Gerasimiuk",
+            "Yinkai Wang",
+            "Ravi K. Dinesh",
+            "David Smerkous",
+            "Alex Smerkous",
+            "Xuekun Wu",
+            "Shilong Liu",
+            "Peishan Li",
+            "Yi Zhu",
+            "Simran Serrao",
+            "Ning Zhao",
+            "Imran A. Mohammad",
+            "John B. Sunwoo",
+            "Joseph C. Wu",
+            "Mengdi Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14861",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14861.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14846",
+          "title": "Where to Search: Measure the Prior-Structured Search Space of LLM Agents",
+          "abstract": "The generate-filter-refine (iterative paradigm) based on large language models (LLMs) has achieved progress in reasoning, programming, and program discovery in AI+Science. However, the effectiveness of search depends on where to search, namely, how to encode the domain prior into an operationally structured hypothesis space. To this end, this paper proposes a compact formal theory that describes and measures LLM-assisted iterative search guided by domain priors. We represent an agent as a fuzzy relation operator on inputs and outputs to capture feasible transitions; the agent is thereby constrained by a fixed safety envelope. To describe multi-step reasoning/search, we weight all reachable paths by a single continuation parameter and sum them to obtain a coverage generating function; this induces a measure of reachability difficulty; and it provides a geometric interpretation of search on the graph induced by the safety envelope. We further provide the simplest testable inferences and validate them via a majority-vote instantiation. This theory offers a workable language and operational tools to measure agents and their search spaces, proposing a systematic formal description of iterative search constructed by LLMs.\n        △ Less",
+          "authors": [
+            "Zhuo-Yang Song"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.LO"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14846",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14846.pdf",
+          "year": 2025,
+          "comments": "Comments:\n10 pages, 2 figures, 1 table"
+        }
+      ]
+    },
+    {
+      "id": "3d-reconstruction",
+      "name": "3D Reconstruction",
+      "query": "3D reconstruction neural radiance fields NeRF",
+      "description": "Neural 3D scene reconstruction and novel view synthesis",
+      "paperCount": 10,
+      "papers": [
+        {
+          "arxivId": "2510.14944",
+          "title": "MetaBench: A Multi-task Benchmark for Assessing LLMs in Metabolomics",
+          "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities on general text; however, their proficiency in specialized scientific domains that require deep, interconnected knowledge remains largely uncharacterized. Metabolomics presents unique challenges with its complex biochemical pathways, heterogeneous identifier systems, and fragmented databases. To systematically evaluate LLM capabilities in this domain, we introduce MetaBench, the first benchmark for metabolomics assessment. Curated from authoritative public resources, MetaBench evaluates five capabilities essential for metabolomics research: knowledge, understanding, grounding, reasoning, and research. Our evaluation of 25 open- and closed-source LLMs reveals distinct performance patterns across metabolomics tasks: while models perform well on text generation tasks, cross-database identifier grounding remains challenging even with retrieval augmentation. Model performance also decreases on long-tail metabolites with sparse annotations. With MetaBench, we provide essential infrastructure for developing and evaluating metabolomics AI systems, enabling systematic progress toward reliable computational tools for metabolomics research.\n        △ Less",
+          "authors": [
+            "Yuxing Lu",
+            "Xukai Zhao",
+            "J. Ben Tamo",
+            "Micky C. Nnamdi",
+            "Rui Peng",
+            "Shuang Zeng",
+            "Xingyu Hu",
+            "Jinzhuo Wang",
+            "May D. Wang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.CE"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14944",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14944.pdf",
+          "year": 2025,
+          "comments": "Comments:\n22 pages, 6 figures, 4 tables"
+        },
+        {
+          "arxivId": "2510.14939",
+          "title": "Decoding in the presence of ISI without interleaving ORBGRAND AI",
+          "abstract": "Inter symbol interference (ISI), which occurs in a wide variety of channels, is a result of time dispersion. It can be mitigated by equalization which results in noise coloring. For such colored noise, we propose a decoder called Ordered Reliability Bit Guessing Random Additive Noise Decoding (ORBGRANDAI) which is inspired by the development of approximate independence in statistical physics. By foregoing interleaving, ORBGRAND-AI can deliver the same, or lower, block error rate (BLER) for the same amount of energy per information bit in an ISI channel as a state-of-the-art soft input decoder, such as Cyclic Redundancy Check Assisted-Successive Cancellation List (CA-SCL) decoding, with an interleaver. To assess the decoding performance of ORBGRAND-AI, we consider delay tap models and their associated colored noise. In particular, we examine a two-tap dicode ISI channel as well as an ISI channel derived from data from RFView, a physics-informed modeling and simulation tool. We investigate the dicode and RFView channel under a variety of imperfect channel state information assumptions and show that a second order autoregressive model adequately represents the RFView channel effect.\n        △ Less",
+          "authors": [
+            "Ken R. Duffy",
+            "Moritz Grundei",
+            "Jane A. Millward",
+            "Muralidhar Rangaswamy",
+            "Muriel Medard"
+          ],
+          "categories": [
+            "eess.SP"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14939",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14939.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14937",
+          "title": "AI-Powered Early Diagnosis of Mental Health Disorders from Real-World Clinical Conversations",
+          "abstract": "Mental health disorders remain among the leading cause of disability worldwide, yet conditions such as depression, anxiety, and Post-Traumatic Stress Disorder (PTSD) are frequently underdiagnosed or misdiagnosed due to subjective assessments, limited clinical resources, and stigma and low awareness. In primary care settings, studies show that providers misidentify depression or anxiety in over 60% of cases, highlighting the urgent need for scalable, accessible, and context-aware diagnostic tools that can support early detection and intervention. In this study, we evaluate the effectiveness of machine learning models for mental health screening using a unique dataset of 553 real-world, semistructured interviews, each paried with ground-truth diagnoses for major depressive episodes (MDE), anxiety disorders, and PTSD. We benchmark multiple model classes, including zero-shot prompting with GPT-4.1 Mini and MetaLLaMA, as well as fine-tuned RoBERTa models using LowRank Adaptation (LoRA). Our models achieve over 80% accuracy across diagnostic categories, with especially strongperformance on PTSD (up to 89% accuracy and 98% recall). We also find that using shorter context, focused context segments improves recall, suggesting that focused narrative cues enhance detection sensitivity. LoRA fine-tuning proves both efficient and effective, with lower-rank configurations (e.g., rank 8 and 16) maintaining competitive performance across evaluation metrics. Our results demonstrate that LLM-based models can offer substantial improvements over traditional self-report screening tools, providing a path toward low-barrier, AI-powerd early diagnosis. This work lays the groundwork for integrating machine learning into real-world clinical workflows, particularly in low-resource or high-stigma environments where access to timely mental health care is most limited.\n        △ Less",
+          "authors": [
+            "Jianfeng Zhu",
+            "Julina Maharjan",
+            "Xinyu Li",
+            "Karin G. Coifman",
+            "Ruoming Jin"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14937",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14937.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages 1 figure"
+        },
+        {
+          "arxivId": "2510.14936",
+          "title": "Circuit Insights: Towards Interpretability Beyond Activations",
+          "abstract": "The fields of explainable AI and mechanistic interpretability aim to uncover the internal structure of neural networks, with circuit discovery as a central tool for understanding model computations. Existing approaches, however, rely on manual inspection and remain limited to toy tasks. Automated interpretability offers scalability by analyzing isolated features and their activations, but it often misses interactions between features and depends strongly on external LLMs and dataset quality. Transcoders have recently made it possible to separate feature attributions into input-dependent and input-invariant components, providing a foundation for more systematic circuit analysis. Building on this, we propose WeightLens and CircuitLens, two complementary methods that go beyond activation-based analysis. WeightLens interprets features directly from their learned weights, removing the need for explainer models or datasets while matching or exceeding the performance of existing methods on context-independent features. CircuitLens captures how feature activations arise from interactions between components, revealing circuit-level dynamics that activation-only approaches cannot identify. Together, these methods increase interpretability robustness and enhance scalable mechanistic analysis of circuits while maintaining efficiency and quality.\n        △ Less",
+          "authors": [
+            "Elena Golimblevskaia",
+            "Aakriti Jain",
+            "Bruno Puri",
+            "Ammar Ibrahim",
+            "Wojciech Samek",
+            "Sebastian Lapuschkin"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14936",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14936.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14928",
+          "title": "Instruction Set Migration at Warehouse Scale",
+          "abstract": "Migrating codebases from one instruction set architecture (ISA) to another is a major engineering challenge. A recent example is the adoption of Arm (in addition to x86) across the major Cloud hyperscalers. Yet, this problem has seen limited attention by the academic community. Most work has focused on static and dynamic binary translation, and the traditional conventional wisdom has been that this is the primary challenge.\n  In this paper, we show that this is no longer the case. Modern ISA migrations can often build on a robust open-source ecosystem, making it possible to recompile all relevant software from scratch. This introduces a new and multifaceted set of challenges, which are different from binary translation.\n  By analyzing a large-scale migration from x86 to Arm at Google, spanning almost 40,000 code commits, we derive a taxonomy of tasks involved in ISA migration. We show how Google automated many of the steps involved, and demonstrate how AI can play a major role in automatically addressing these tasks. We identify tasks that remain challenging and highlight research challenges that warrant further attention.\n        △ Less",
+          "authors": [
+            "Eric Christopher",
+            "Kevin Crossan",
+            "Wolff Dobson",
+            "Chris Kennelly",
+            "Drew Lewis",
+            "Kun Lin",
+            "Martin Maas",
+            "Parthasarathy Ranganathan",
+            "Emma Rapati",
+            "Brian Yang"
+          ],
+          "categories": [
+            "cs.SE",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14928",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14928.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14884",
+          "title": "Learning When Not to Learn: Risk-Sensitive Abstention in Bandits with Unbounded Rewards",
+          "abstract": "In high-stakes AI applications, even a single action can cause irreparable damage. However, nearly all of sequential decision-making theory assumes that all errors are recoverable (e.g., by bounding rewards). Standard bandit algorithms that explore aggressively may cause irreparable damage when this assumption fails. Some prior work avoids irreparable errors by asking for help from a mentor, but a mentor may not always be available. In this work, we formalize a model of learning with unbounded rewards without a mentor as a two-action contextual bandit with an abstain option: at each round the agent observes an input and chooses either to abstain (always 0 reward) or to commit (execute a preexisting task policy). Committing yields rewards that are upper-bounded but can be arbitrarily negative, and the commit reward is assumed Lipschitz in the input. We propose a caution-based algorithm that learns when not to learn: it chooses a trusted region and commits only where the available evidence does not already certify harm. Under these conditions and i.i.d. inputs, we establish sublinear regret guarantees, theoretically demonstrating the effectiveness of cautious exploration for deploying learning agents safely in high-stakes environments.\n        △ Less",
+          "authors": [
+            "Sarah Liaw",
+            "Benjamin Plaut"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14884",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14884.pdf",
+          "year": 2025,
+          "comments": "Comments:\n16 pages, 1 figure; under submission"
+        },
+        {
+          "arxivId": "2510.14881",
+          "title": "The Gatekeeper Knows Enough",
+          "abstract": "Large Language Models (LLMs) are increasingly deployed as autonomous agents, yet their practical utility is fundamentally constrained by a limited context window and state desynchronization resulting from the LLMs' stateless nature and inefficient context management. These limitations lead to unreliable output, unpredictable behavior, and inefficient resource usage, particularly when interacting with large, structured, and sensitive knowledge systems such as codebases and documents. To address these challenges, we introduce the Gatekeeper Protocol, a novel, domain-agnostic framework that governs agent-system interactions. Our protocol mandates that the agent first operate and reason on a minimalist, low-fidelity \"latent state\" representation of the system to strategically request high-fidelity context on demand. All interactions are mediated through a unified JSON format that serves as a declarative, state-synchronized protocol, ensuring the agent's model of the system remains verifiably grounded in the system's reality. We demonstrate the efficacy of this protocol with Sage, a reference implementation of the Gatekeeper Protocol for software development. Our results show that this approach significantly increases agent reliability, improves computational efficiency by minimizing token consumption, and enables scalable interaction with complex systems, creating a foundational methodology for building more robust, predictable, and grounded AI agents for any structured knowledge domain.\n        △ Less",
+          "authors": [
+            "Fikresilase Wondmeneh Abebayew"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.IT"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14881",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14881.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages, 1 figure"
+        },
+        {
+          "arxivId": "2510.14871",
+          "title": "From Loop Nests to Silicon: Mapping AI Workloads onto AMD NPUs with MLIR-AIR",
+          "abstract": "General-purpose compilers abstract away parallelism, locality, and synchronization, limiting their effectiveness on modern spatial architectures. As modern computing architectures increasingly rely on fine-grained control over data movement, execution order, and compute placement for performance, compiler infrastructure must provide explicit mechanisms for orchestrating compute and data to fully exploit such architectures. We introduce MLIR-AIR, a novel, open-source compiler stack built on MLIR that bridges the semantic gap between high-level workloads and fine-grained spatial architectures such as AMD's NPUs. MLIR-AIR defines the AIR dialect, which provides structured representations for asynchronous and hierarchical operations across compute and memory resources. AIR primitives allow the compiler to orchestrate spatial scheduling, distribute computation across hardware regions, and overlap communication with computation without relying on ad hoc runtime coordination or manual scheduling. We demonstrate MLIR-AIR's capabilities through two case studies: matrix multiplication and the multi-head attention block from the LLaMA 2 model. For matrix multiplication, MLIR-AIR achieves up to 78.7% compute efficiency and generates implementations with performance almost identical to state-of-the-art, hand-optimized matrix multiplication written using the lower-level, close-to-metal MLIR-AIE framework. For multi-head attention, we demonstrate that the AIR interface supports fused implementations using approximately 150 lines of code, enabling tractable expression of complex workloads with efficient mapping to spatial hardware. MLIR-AIR transforms high-level structured control flow into spatial programs that efficiently utilize the compute fabric and memory hierarchy of an NPU, leveraging asynchronous execution, tiling, and communication overlap through compiler-managed scheduling.\n        △ Less",
+          "authors": [
+            "Erwei Wang",
+            "Samuel Bayliss",
+            "Andra Bisca",
+            "Zachary Blair",
+            "Sangeeta Chowdhary",
+            "Kristof Denolf",
+            "Jeff Fifield",
+            "Brandon Freiberger",
+            "Erika Hunhoff",
+            "Phil James-Roxby",
+            "Jack Lo",
+            "Joseph Melber",
+            "Stephen Neuendorffer",
+            "Eddie Richter",
+            "Andre Rosti",
+            "Javier Setoain",
+            "Gagandeep Singh",
+            "Endri Taka",
+            "Pranathi Vasireddy",
+            "Zhewen Yu",
+            "Niansong Zhang",
+            "Jinming Zhuang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AR",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14871",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14871.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14861",
+          "title": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
+          "abstract": "Modern science advances fastest when thought meets action. LabOS represents the first AI co-scientist that unites computational reasoning with physical experimentation through multimodal perception, self-evolving agents, and Entended-Reality(XR)-enabled human-AI collaboration. By connecting multi-model AI agents, smart glasses, and human-AI collaboration, LabOS allows AI to see what scientists see, understand experimental context, and assist in real-time execution. Across applications--from cancer immunotherapy target discovery to stem-cell engineering -- LabOS shows that AI can move beyond computational design to participation, turning the laboratory into an intelligent, collaborative environment where human and machine discovery evolve together.\n        △ Less",
+          "authors": [
+            "Le Cong",
+            "Zaixi Zhang",
+            "Xiaotong Wang",
+            "Yin Di",
+            "Ruofan Jin",
+            "Michal Gerasimiuk",
+            "Yinkai Wang",
+            "Ravi K. Dinesh",
+            "David Smerkous",
+            "Alex Smerkous",
+            "Xuekun Wu",
+            "Shilong Liu",
+            "Peishan Li",
+            "Yi Zhu",
+            "Simran Serrao",
+            "Ning Zhao",
+            "Imran A. Mohammad",
+            "John B. Sunwoo",
+            "Joseph C. Wu",
+            "Mengdi Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14861",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14861.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14846",
+          "title": "Where to Search: Measure the Prior-Structured Search Space of LLM Agents",
+          "abstract": "The generate-filter-refine (iterative paradigm) based on large language models (LLMs) has achieved progress in reasoning, programming, and program discovery in AI+Science. However, the effectiveness of search depends on where to search, namely, how to encode the domain prior into an operationally structured hypothesis space. To this end, this paper proposes a compact formal theory that describes and measures LLM-assisted iterative search guided by domain priors. We represent an agent as a fuzzy relation operator on inputs and outputs to capture feasible transitions; the agent is thereby constrained by a fixed safety envelope. To describe multi-step reasoning/search, we weight all reachable paths by a single continuation parameter and sum them to obtain a coverage generating function; this induces a measure of reachability difficulty; and it provides a geometric interpretation of search on the graph induced by the safety envelope. We further provide the simplest testable inferences and validate them via a majority-vote instantiation. This theory offers a workable language and operational tools to measure agents and their search spaces, proposing a systematic formal description of iterative search constructed by LLMs.\n        △ Less",
+          "authors": [
+            "Zhuo-Yang Song"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.LO"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14846",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14846.pdf",
+          "year": 2025,
+          "comments": "Comments:\n10 pages, 2 figures, 1 table"
+        }
+      ]
+    },
+    {
+      "id": "video-understanding",
+      "name": "Video Understanding",
+      "query": "video understanding temporal action recognition",
+      "description": "Temporal modeling and action recognition in videos",
+      "paperCount": 10,
+      "papers": [
+        {
+          "arxivId": "2510.14944",
+          "title": "MetaBench: A Multi-task Benchmark for Assessing LLMs in Metabolomics",
+          "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities on general text; however, their proficiency in specialized scientific domains that require deep, interconnected knowledge remains largely uncharacterized. Metabolomics presents unique challenges with its complex biochemical pathways, heterogeneous identifier systems, and fragmented databases. To systematically evaluate LLM capabilities in this domain, we introduce MetaBench, the first benchmark for metabolomics assessment. Curated from authoritative public resources, MetaBench evaluates five capabilities essential for metabolomics research: knowledge, understanding, grounding, reasoning, and research. Our evaluation of 25 open- and closed-source LLMs reveals distinct performance patterns across metabolomics tasks: while models perform well on text generation tasks, cross-database identifier grounding remains challenging even with retrieval augmentation. Model performance also decreases on long-tail metabolites with sparse annotations. With MetaBench, we provide essential infrastructure for developing and evaluating metabolomics AI systems, enabling systematic progress toward reliable computational tools for metabolomics research.\n        △ Less",
+          "authors": [
+            "Yuxing Lu",
+            "Xukai Zhao",
+            "J. Ben Tamo",
+            "Micky C. Nnamdi",
+            "Rui Peng",
+            "Shuang Zeng",
+            "Xingyu Hu",
+            "Jinzhuo Wang",
+            "May D. Wang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.CE"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14944",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14944.pdf",
+          "year": 2025,
+          "comments": "Comments:\n22 pages, 6 figures, 4 tables"
+        },
+        {
+          "arxivId": "2510.14939",
+          "title": "Decoding in the presence of ISI without interleaving ORBGRAND AI",
+          "abstract": "Inter symbol interference (ISI), which occurs in a wide variety of channels, is a result of time dispersion. It can be mitigated by equalization which results in noise coloring. For such colored noise, we propose a decoder called Ordered Reliability Bit Guessing Random Additive Noise Decoding (ORBGRANDAI) which is inspired by the development of approximate independence in statistical physics. By foregoing interleaving, ORBGRAND-AI can deliver the same, or lower, block error rate (BLER) for the same amount of energy per information bit in an ISI channel as a state-of-the-art soft input decoder, such as Cyclic Redundancy Check Assisted-Successive Cancellation List (CA-SCL) decoding, with an interleaver. To assess the decoding performance of ORBGRAND-AI, we consider delay tap models and their associated colored noise. In particular, we examine a two-tap dicode ISI channel as well as an ISI channel derived from data from RFView, a physics-informed modeling and simulation tool. We investigate the dicode and RFView channel under a variety of imperfect channel state information assumptions and show that a second order autoregressive model adequately represents the RFView channel effect.\n        △ Less",
+          "authors": [
+            "Ken R. Duffy",
+            "Moritz Grundei",
+            "Jane A. Millward",
+            "Muralidhar Rangaswamy",
+            "Muriel Medard"
+          ],
+          "categories": [
+            "eess.SP"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14939",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14939.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14937",
+          "title": "AI-Powered Early Diagnosis of Mental Health Disorders from Real-World Clinical Conversations",
+          "abstract": "Mental health disorders remain among the leading cause of disability worldwide, yet conditions such as depression, anxiety, and Post-Traumatic Stress Disorder (PTSD) are frequently underdiagnosed or misdiagnosed due to subjective assessments, limited clinical resources, and stigma and low awareness. In primary care settings, studies show that providers misidentify depression or anxiety in over 60% of cases, highlighting the urgent need for scalable, accessible, and context-aware diagnostic tools that can support early detection and intervention. In this study, we evaluate the effectiveness of machine learning models for mental health screening using a unique dataset of 553 real-world, semistructured interviews, each paried with ground-truth diagnoses for major depressive episodes (MDE), anxiety disorders, and PTSD. We benchmark multiple model classes, including zero-shot prompting with GPT-4.1 Mini and MetaLLaMA, as well as fine-tuned RoBERTa models using LowRank Adaptation (LoRA). Our models achieve over 80% accuracy across diagnostic categories, with especially strongperformance on PTSD (up to 89% accuracy and 98% recall). We also find that using shorter context, focused context segments improves recall, suggesting that focused narrative cues enhance detection sensitivity. LoRA fine-tuning proves both efficient and effective, with lower-rank configurations (e.g., rank 8 and 16) maintaining competitive performance across evaluation metrics. Our results demonstrate that LLM-based models can offer substantial improvements over traditional self-report screening tools, providing a path toward low-barrier, AI-powerd early diagnosis. This work lays the groundwork for integrating machine learning into real-world clinical workflows, particularly in low-resource or high-stigma environments where access to timely mental health care is most limited.\n        △ Less",
+          "authors": [
+            "Jianfeng Zhu",
+            "Julina Maharjan",
+            "Xinyu Li",
+            "Karin G. Coifman",
+            "Ruoming Jin"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14937",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14937.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages 1 figure"
+        },
+        {
+          "arxivId": "2510.14936",
+          "title": "Circuit Insights: Towards Interpretability Beyond Activations",
+          "abstract": "The fields of explainable AI and mechanistic interpretability aim to uncover the internal structure of neural networks, with circuit discovery as a central tool for understanding model computations. Existing approaches, however, rely on manual inspection and remain limited to toy tasks. Automated interpretability offers scalability by analyzing isolated features and their activations, but it often misses interactions between features and depends strongly on external LLMs and dataset quality. Transcoders have recently made it possible to separate feature attributions into input-dependent and input-invariant components, providing a foundation for more systematic circuit analysis. Building on this, we propose WeightLens and CircuitLens, two complementary methods that go beyond activation-based analysis. WeightLens interprets features directly from their learned weights, removing the need for explainer models or datasets while matching or exceeding the performance of existing methods on context-independent features. CircuitLens captures how feature activations arise from interactions between components, revealing circuit-level dynamics that activation-only approaches cannot identify. Together, these methods increase interpretability robustness and enhance scalable mechanistic analysis of circuits while maintaining efficiency and quality.\n        △ Less",
+          "authors": [
+            "Elena Golimblevskaia",
+            "Aakriti Jain",
+            "Bruno Puri",
+            "Ammar Ibrahim",
+            "Wojciech Samek",
+            "Sebastian Lapuschkin"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14936",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14936.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14928",
+          "title": "Instruction Set Migration at Warehouse Scale",
+          "abstract": "Migrating codebases from one instruction set architecture (ISA) to another is a major engineering challenge. A recent example is the adoption of Arm (in addition to x86) across the major Cloud hyperscalers. Yet, this problem has seen limited attention by the academic community. Most work has focused on static and dynamic binary translation, and the traditional conventional wisdom has been that this is the primary challenge.\n  In this paper, we show that this is no longer the case. Modern ISA migrations can often build on a robust open-source ecosystem, making it possible to recompile all relevant software from scratch. This introduces a new and multifaceted set of challenges, which are different from binary translation.\n  By analyzing a large-scale migration from x86 to Arm at Google, spanning almost 40,000 code commits, we derive a taxonomy of tasks involved in ISA migration. We show how Google automated many of the steps involved, and demonstrate how AI can play a major role in automatically addressing these tasks. We identify tasks that remain challenging and highlight research challenges that warrant further attention.\n        △ Less",
+          "authors": [
+            "Eric Christopher",
+            "Kevin Crossan",
+            "Wolff Dobson",
+            "Chris Kennelly",
+            "Drew Lewis",
+            "Kun Lin",
+            "Martin Maas",
+            "Parthasarathy Ranganathan",
+            "Emma Rapati",
+            "Brian Yang"
+          ],
+          "categories": [
+            "cs.SE",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14928",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14928.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14884",
+          "title": "Learning When Not to Learn: Risk-Sensitive Abstention in Bandits with Unbounded Rewards",
+          "abstract": "In high-stakes AI applications, even a single action can cause irreparable damage. However, nearly all of sequential decision-making theory assumes that all errors are recoverable (e.g., by bounding rewards). Standard bandit algorithms that explore aggressively may cause irreparable damage when this assumption fails. Some prior work avoids irreparable errors by asking for help from a mentor, but a mentor may not always be available. In this work, we formalize a model of learning with unbounded rewards without a mentor as a two-action contextual bandit with an abstain option: at each round the agent observes an input and chooses either to abstain (always 0 reward) or to commit (execute a preexisting task policy). Committing yields rewards that are upper-bounded but can be arbitrarily negative, and the commit reward is assumed Lipschitz in the input. We propose a caution-based algorithm that learns when not to learn: it chooses a trusted region and commits only where the available evidence does not already certify harm. Under these conditions and i.i.d. inputs, we establish sublinear regret guarantees, theoretically demonstrating the effectiveness of cautious exploration for deploying learning agents safely in high-stakes environments.\n        △ Less",
+          "authors": [
+            "Sarah Liaw",
+            "Benjamin Plaut"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14884",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14884.pdf",
+          "year": 2025,
+          "comments": "Comments:\n16 pages, 1 figure; under submission"
+        },
+        {
+          "arxivId": "2510.14881",
+          "title": "The Gatekeeper Knows Enough",
+          "abstract": "Large Language Models (LLMs) are increasingly deployed as autonomous agents, yet their practical utility is fundamentally constrained by a limited context window and state desynchronization resulting from the LLMs' stateless nature and inefficient context management. These limitations lead to unreliable output, unpredictable behavior, and inefficient resource usage, particularly when interacting with large, structured, and sensitive knowledge systems such as codebases and documents. To address these challenges, we introduce the Gatekeeper Protocol, a novel, domain-agnostic framework that governs agent-system interactions. Our protocol mandates that the agent first operate and reason on a minimalist, low-fidelity \"latent state\" representation of the system to strategically request high-fidelity context on demand. All interactions are mediated through a unified JSON format that serves as a declarative, state-synchronized protocol, ensuring the agent's model of the system remains verifiably grounded in the system's reality. We demonstrate the efficacy of this protocol with Sage, a reference implementation of the Gatekeeper Protocol for software development. Our results show that this approach significantly increases agent reliability, improves computational efficiency by minimizing token consumption, and enables scalable interaction with complex systems, creating a foundational methodology for building more robust, predictable, and grounded AI agents for any structured knowledge domain.\n        △ Less",
+          "authors": [
+            "Fikresilase Wondmeneh Abebayew"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.IT"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14881",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14881.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages, 1 figure"
+        },
+        {
+          "arxivId": "2510.14871",
+          "title": "From Loop Nests to Silicon: Mapping AI Workloads onto AMD NPUs with MLIR-AIR",
+          "abstract": "General-purpose compilers abstract away parallelism, locality, and synchronization, limiting their effectiveness on modern spatial architectures. As modern computing architectures increasingly rely on fine-grained control over data movement, execution order, and compute placement for performance, compiler infrastructure must provide explicit mechanisms for orchestrating compute and data to fully exploit such architectures. We introduce MLIR-AIR, a novel, open-source compiler stack built on MLIR that bridges the semantic gap between high-level workloads and fine-grained spatial architectures such as AMD's NPUs. MLIR-AIR defines the AIR dialect, which provides structured representations for asynchronous and hierarchical operations across compute and memory resources. AIR primitives allow the compiler to orchestrate spatial scheduling, distribute computation across hardware regions, and overlap communication with computation without relying on ad hoc runtime coordination or manual scheduling. We demonstrate MLIR-AIR's capabilities through two case studies: matrix multiplication and the multi-head attention block from the LLaMA 2 model. For matrix multiplication, MLIR-AIR achieves up to 78.7% compute efficiency and generates implementations with performance almost identical to state-of-the-art, hand-optimized matrix multiplication written using the lower-level, close-to-metal MLIR-AIE framework. For multi-head attention, we demonstrate that the AIR interface supports fused implementations using approximately 150 lines of code, enabling tractable expression of complex workloads with efficient mapping to spatial hardware. MLIR-AIR transforms high-level structured control flow into spatial programs that efficiently utilize the compute fabric and memory hierarchy of an NPU, leveraging asynchronous execution, tiling, and communication overlap through compiler-managed scheduling.\n        △ Less",
+          "authors": [
+            "Erwei Wang",
+            "Samuel Bayliss",
+            "Andra Bisca",
+            "Zachary Blair",
+            "Sangeeta Chowdhary",
+            "Kristof Denolf",
+            "Jeff Fifield",
+            "Brandon Freiberger",
+            "Erika Hunhoff",
+            "Phil James-Roxby",
+            "Jack Lo",
+            "Joseph Melber",
+            "Stephen Neuendorffer",
+            "Eddie Richter",
+            "Andre Rosti",
+            "Javier Setoain",
+            "Gagandeep Singh",
+            "Endri Taka",
+            "Pranathi Vasireddy",
+            "Zhewen Yu",
+            "Niansong Zhang",
+            "Jinming Zhuang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AR",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14871",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14871.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14861",
+          "title": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
+          "abstract": "Modern science advances fastest when thought meets action. LabOS represents the first AI co-scientist that unites computational reasoning with physical experimentation through multimodal perception, self-evolving agents, and Entended-Reality(XR)-enabled human-AI collaboration. By connecting multi-model AI agents, smart glasses, and human-AI collaboration, LabOS allows AI to see what scientists see, understand experimental context, and assist in real-time execution. Across applications--from cancer immunotherapy target discovery to stem-cell engineering -- LabOS shows that AI can move beyond computational design to participation, turning the laboratory into an intelligent, collaborative environment where human and machine discovery evolve together.\n        △ Less",
+          "authors": [
+            "Le Cong",
+            "Zaixi Zhang",
+            "Xiaotong Wang",
+            "Yin Di",
+            "Ruofan Jin",
+            "Michal Gerasimiuk",
+            "Yinkai Wang",
+            "Ravi K. Dinesh",
+            "David Smerkous",
+            "Alex Smerkous",
+            "Xuekun Wu",
+            "Shilong Liu",
+            "Peishan Li",
+            "Yi Zhu",
+            "Simran Serrao",
+            "Ning Zhao",
+            "Imran A. Mohammad",
+            "John B. Sunwoo",
+            "Joseph C. Wu",
+            "Mengdi Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14861",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14861.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14846",
+          "title": "Where to Search: Measure the Prior-Structured Search Space of LLM Agents",
+          "abstract": "The generate-filter-refine (iterative paradigm) based on large language models (LLMs) has achieved progress in reasoning, programming, and program discovery in AI+Science. However, the effectiveness of search depends on where to search, namely, how to encode the domain prior into an operationally structured hypothesis space. To this end, this paper proposes a compact formal theory that describes and measures LLM-assisted iterative search guided by domain priors. We represent an agent as a fuzzy relation operator on inputs and outputs to capture feasible transitions; the agent is thereby constrained by a fixed safety envelope. To describe multi-step reasoning/search, we weight all reachable paths by a single continuation parameter and sum them to obtain a coverage generating function; this induces a measure of reachability difficulty; and it provides a geometric interpretation of search on the graph induced by the safety envelope. We further provide the simplest testable inferences and validate them via a majority-vote instantiation. This theory offers a workable language and operational tools to measure agents and their search spaces, proposing a systematic formal description of iterative search constructed by LLMs.\n        △ Less",
+          "authors": [
+            "Zhuo-Yang Song"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.LO"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14846",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14846.pdf",
+          "year": 2025,
+          "comments": "Comments:\n10 pages, 2 figures, 1 table"
+        }
+      ]
+    },
+    {
+      "id": "foundation-models",
+      "name": "Vision Foundation Models",
+      "query": "vision foundation models self-supervised learning",
+      "description": "Large-scale pre-trained models for computer vision",
+      "paperCount": 10,
+      "papers": [
+        {
+          "arxivId": "2510.14944",
+          "title": "MetaBench: A Multi-task Benchmark for Assessing LLMs in Metabolomics",
+          "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities on general text; however, their proficiency in specialized scientific domains that require deep, interconnected knowledge remains largely uncharacterized. Metabolomics presents unique challenges with its complex biochemical pathways, heterogeneous identifier systems, and fragmented databases. To systematically evaluate LLM capabilities in this domain, we introduce MetaBench, the first benchmark for metabolomics assessment. Curated from authoritative public resources, MetaBench evaluates five capabilities essential for metabolomics research: knowledge, understanding, grounding, reasoning, and research. Our evaluation of 25 open- and closed-source LLMs reveals distinct performance patterns across metabolomics tasks: while models perform well on text generation tasks, cross-database identifier grounding remains challenging even with retrieval augmentation. Model performance also decreases on long-tail metabolites with sparse annotations. With MetaBench, we provide essential infrastructure for developing and evaluating metabolomics AI systems, enabling systematic progress toward reliable computational tools for metabolomics research.\n        △ Less",
+          "authors": [
+            "Yuxing Lu",
+            "Xukai Zhao",
+            "J. Ben Tamo",
+            "Micky C. Nnamdi",
+            "Rui Peng",
+            "Shuang Zeng",
+            "Xingyu Hu",
+            "Jinzhuo Wang",
+            "May D. Wang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.CE"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14944",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14944.pdf",
+          "year": 2025,
+          "comments": "Comments:\n22 pages, 6 figures, 4 tables"
+        },
+        {
+          "arxivId": "2510.14939",
+          "title": "Decoding in the presence of ISI without interleaving ORBGRAND AI",
+          "abstract": "Inter symbol interference (ISI), which occurs in a wide variety of channels, is a result of time dispersion. It can be mitigated by equalization which results in noise coloring. For such colored noise, we propose a decoder called Ordered Reliability Bit Guessing Random Additive Noise Decoding (ORBGRANDAI) which is inspired by the development of approximate independence in statistical physics. By foregoing interleaving, ORBGRAND-AI can deliver the same, or lower, block error rate (BLER) for the same amount of energy per information bit in an ISI channel as a state-of-the-art soft input decoder, such as Cyclic Redundancy Check Assisted-Successive Cancellation List (CA-SCL) decoding, with an interleaver. To assess the decoding performance of ORBGRAND-AI, we consider delay tap models and their associated colored noise. In particular, we examine a two-tap dicode ISI channel as well as an ISI channel derived from data from RFView, a physics-informed modeling and simulation tool. We investigate the dicode and RFView channel under a variety of imperfect channel state information assumptions and show that a second order autoregressive model adequately represents the RFView channel effect.\n        △ Less",
+          "authors": [
+            "Ken R. Duffy",
+            "Moritz Grundei",
+            "Jane A. Millward",
+            "Muralidhar Rangaswamy",
+            "Muriel Medard"
+          ],
+          "categories": [
+            "eess.SP"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14939",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14939.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14937",
+          "title": "AI-Powered Early Diagnosis of Mental Health Disorders from Real-World Clinical Conversations",
+          "abstract": "Mental health disorders remain among the leading cause of disability worldwide, yet conditions such as depression, anxiety, and Post-Traumatic Stress Disorder (PTSD) are frequently underdiagnosed or misdiagnosed due to subjective assessments, limited clinical resources, and stigma and low awareness. In primary care settings, studies show that providers misidentify depression or anxiety in over 60% of cases, highlighting the urgent need for scalable, accessible, and context-aware diagnostic tools that can support early detection and intervention. In this study, we evaluate the effectiveness of machine learning models for mental health screening using a unique dataset of 553 real-world, semistructured interviews, each paried with ground-truth diagnoses for major depressive episodes (MDE), anxiety disorders, and PTSD. We benchmark multiple model classes, including zero-shot prompting with GPT-4.1 Mini and MetaLLaMA, as well as fine-tuned RoBERTa models using LowRank Adaptation (LoRA). Our models achieve over 80% accuracy across diagnostic categories, with especially strongperformance on PTSD (up to 89% accuracy and 98% recall). We also find that using shorter context, focused context segments improves recall, suggesting that focused narrative cues enhance detection sensitivity. LoRA fine-tuning proves both efficient and effective, with lower-rank configurations (e.g., rank 8 and 16) maintaining competitive performance across evaluation metrics. Our results demonstrate that LLM-based models can offer substantial improvements over traditional self-report screening tools, providing a path toward low-barrier, AI-powerd early diagnosis. This work lays the groundwork for integrating machine learning into real-world clinical workflows, particularly in low-resource or high-stigma environments where access to timely mental health care is most limited.\n        △ Less",
+          "authors": [
+            "Jianfeng Zhu",
+            "Julina Maharjan",
+            "Xinyu Li",
+            "Karin G. Coifman",
+            "Ruoming Jin"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14937",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14937.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages 1 figure"
+        },
+        {
+          "arxivId": "2510.14936",
+          "title": "Circuit Insights: Towards Interpretability Beyond Activations",
+          "abstract": "The fields of explainable AI and mechanistic interpretability aim to uncover the internal structure of neural networks, with circuit discovery as a central tool for understanding model computations. Existing approaches, however, rely on manual inspection and remain limited to toy tasks. Automated interpretability offers scalability by analyzing isolated features and their activations, but it often misses interactions between features and depends strongly on external LLMs and dataset quality. Transcoders have recently made it possible to separate feature attributions into input-dependent and input-invariant components, providing a foundation for more systematic circuit analysis. Building on this, we propose WeightLens and CircuitLens, two complementary methods that go beyond activation-based analysis. WeightLens interprets features directly from their learned weights, removing the need for explainer models or datasets while matching or exceeding the performance of existing methods on context-independent features. CircuitLens captures how feature activations arise from interactions between components, revealing circuit-level dynamics that activation-only approaches cannot identify. Together, these methods increase interpretability robustness and enhance scalable mechanistic analysis of circuits while maintaining efficiency and quality.\n        △ Less",
+          "authors": [
+            "Elena Golimblevskaia",
+            "Aakriti Jain",
+            "Bruno Puri",
+            "Ammar Ibrahim",
+            "Wojciech Samek",
+            "Sebastian Lapuschkin"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CL"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14936",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14936.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14928",
+          "title": "Instruction Set Migration at Warehouse Scale",
+          "abstract": "Migrating codebases from one instruction set architecture (ISA) to another is a major engineering challenge. A recent example is the adoption of Arm (in addition to x86) across the major Cloud hyperscalers. Yet, this problem has seen limited attention by the academic community. Most work has focused on static and dynamic binary translation, and the traditional conventional wisdom has been that this is the primary challenge.\n  In this paper, we show that this is no longer the case. Modern ISA migrations can often build on a robust open-source ecosystem, making it possible to recompile all relevant software from scratch. This introduces a new and multifaceted set of challenges, which are different from binary translation.\n  By analyzing a large-scale migration from x86 to Arm at Google, spanning almost 40,000 code commits, we derive a taxonomy of tasks involved in ISA migration. We show how Google automated many of the steps involved, and demonstrate how AI can play a major role in automatically addressing these tasks. We identify tasks that remain challenging and highlight research challenges that warrant further attention.\n        △ Less",
+          "authors": [
+            "Eric Christopher",
+            "Kevin Crossan",
+            "Wolff Dobson",
+            "Chris Kennelly",
+            "Drew Lewis",
+            "Kun Lin",
+            "Martin Maas",
+            "Parthasarathy Ranganathan",
+            "Emma Rapati",
+            "Brian Yang"
+          ],
+          "categories": [
+            "cs.SE",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14928",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14928.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14884",
+          "title": "Learning When Not to Learn: Risk-Sensitive Abstention in Bandits with Unbounded Rewards",
+          "abstract": "In high-stakes AI applications, even a single action can cause irreparable damage. However, nearly all of sequential decision-making theory assumes that all errors are recoverable (e.g., by bounding rewards). Standard bandit algorithms that explore aggressively may cause irreparable damage when this assumption fails. Some prior work avoids irreparable errors by asking for help from a mentor, but a mentor may not always be available. In this work, we formalize a model of learning with unbounded rewards without a mentor as a two-action contextual bandit with an abstain option: at each round the agent observes an input and chooses either to abstain (always 0 reward) or to commit (execute a preexisting task policy). Committing yields rewards that are upper-bounded but can be arbitrarily negative, and the commit reward is assumed Lipschitz in the input. We propose a caution-based algorithm that learns when not to learn: it chooses a trusted region and commits only where the available evidence does not already certify harm. Under these conditions and i.i.d. inputs, we establish sublinear regret guarantees, theoretically demonstrating the effectiveness of cautious exploration for deploying learning agents safely in high-stakes environments.\n        △ Less",
+          "authors": [
+            "Sarah Liaw",
+            "Benjamin Plaut"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14884",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14884.pdf",
+          "year": 2025,
+          "comments": "Comments:\n16 pages, 1 figure; under submission"
+        },
+        {
+          "arxivId": "2510.14881",
+          "title": "The Gatekeeper Knows Enough",
+          "abstract": "Large Language Models (LLMs) are increasingly deployed as autonomous agents, yet their practical utility is fundamentally constrained by a limited context window and state desynchronization resulting from the LLMs' stateless nature and inefficient context management. These limitations lead to unreliable output, unpredictable behavior, and inefficient resource usage, particularly when interacting with large, structured, and sensitive knowledge systems such as codebases and documents. To address these challenges, we introduce the Gatekeeper Protocol, a novel, domain-agnostic framework that governs agent-system interactions. Our protocol mandates that the agent first operate and reason on a minimalist, low-fidelity \"latent state\" representation of the system to strategically request high-fidelity context on demand. All interactions are mediated through a unified JSON format that serves as a declarative, state-synchronized protocol, ensuring the agent's model of the system remains verifiably grounded in the system's reality. We demonstrate the efficacy of this protocol with Sage, a reference implementation of the Gatekeeper Protocol for software development. Our results show that this approach significantly increases agent reliability, improves computational efficiency by minimizing token consumption, and enables scalable interaction with complex systems, creating a foundational methodology for building more robust, predictable, and grounded AI agents for any structured knowledge domain.\n        △ Less",
+          "authors": [
+            "Fikresilase Wondmeneh Abebayew"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.IT"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14881",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14881.pdf",
+          "year": 2025,
+          "comments": "Comments:\n7 pages, 1 figure"
+        },
+        {
+          "arxivId": "2510.14871",
+          "title": "From Loop Nests to Silicon: Mapping AI Workloads onto AMD NPUs with MLIR-AIR",
+          "abstract": "General-purpose compilers abstract away parallelism, locality, and synchronization, limiting their effectiveness on modern spatial architectures. As modern computing architectures increasingly rely on fine-grained control over data movement, execution order, and compute placement for performance, compiler infrastructure must provide explicit mechanisms for orchestrating compute and data to fully exploit such architectures. We introduce MLIR-AIR, a novel, open-source compiler stack built on MLIR that bridges the semantic gap between high-level workloads and fine-grained spatial architectures such as AMD's NPUs. MLIR-AIR defines the AIR dialect, which provides structured representations for asynchronous and hierarchical operations across compute and memory resources. AIR primitives allow the compiler to orchestrate spatial scheduling, distribute computation across hardware regions, and overlap communication with computation without relying on ad hoc runtime coordination or manual scheduling. We demonstrate MLIR-AIR's capabilities through two case studies: matrix multiplication and the multi-head attention block from the LLaMA 2 model. For matrix multiplication, MLIR-AIR achieves up to 78.7% compute efficiency and generates implementations with performance almost identical to state-of-the-art, hand-optimized matrix multiplication written using the lower-level, close-to-metal MLIR-AIE framework. For multi-head attention, we demonstrate that the AIR interface supports fused implementations using approximately 150 lines of code, enabling tractable expression of complex workloads with efficient mapping to spatial hardware. MLIR-AIR transforms high-level structured control flow into spatial programs that efficiently utilize the compute fabric and memory hierarchy of an NPU, leveraging asynchronous execution, tiling, and communication overlap through compiler-managed scheduling.\n        △ Less",
+          "authors": [
+            "Erwei Wang",
+            "Samuel Bayliss",
+            "Andra Bisca",
+            "Zachary Blair",
+            "Sangeeta Chowdhary",
+            "Kristof Denolf",
+            "Jeff Fifield",
+            "Brandon Freiberger",
+            "Erika Hunhoff",
+            "Phil James-Roxby",
+            "Jack Lo",
+            "Joseph Melber",
+            "Stephen Neuendorffer",
+            "Eddie Richter",
+            "Andre Rosti",
+            "Javier Setoain",
+            "Gagandeep Singh",
+            "Endri Taka",
+            "Pranathi Vasireddy",
+            "Zhewen Yu",
+            "Niansong Zhang",
+            "Jinming Zhuang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AR",
+            "cs.LG"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14871",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14871.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14861",
+          "title": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
+          "abstract": "Modern science advances fastest when thought meets action. LabOS represents the first AI co-scientist that unites computational reasoning with physical experimentation through multimodal perception, self-evolving agents, and Entended-Reality(XR)-enabled human-AI collaboration. By connecting multi-model AI agents, smart glasses, and human-AI collaboration, LabOS allows AI to see what scientists see, understand experimental context, and assist in real-time execution. Across applications--from cancer immunotherapy target discovery to stem-cell engineering -- LabOS shows that AI can move beyond computational design to participation, turning the laboratory into an intelligent, collaborative environment where human and machine discovery evolve together.\n        △ Less",
+          "authors": [
+            "Le Cong",
+            "Zaixi Zhang",
+            "Xiaotong Wang",
+            "Yin Di",
+            "Ruofan Jin",
+            "Michal Gerasimiuk",
+            "Yinkai Wang",
+            "Ravi K. Dinesh",
+            "David Smerkous",
+            "Alex Smerkous",
+            "Xuekun Wu",
+            "Shilong Liu",
+            "Peishan Li",
+            "Yi Zhu",
+            "Simran Serrao",
+            "Ning Zhao",
+            "Imran A. Mohammad",
+            "John B. Sunwoo",
+            "Joseph C. Wu",
+            "Mengdi Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14861",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14861.pdf",
+          "year": 2025,
+          "comments": "N/A"
+        },
+        {
+          "arxivId": "2510.14846",
+          "title": "Where to Search: Measure the Prior-Structured Search Space of LLM Agents",
+          "abstract": "The generate-filter-refine (iterative paradigm) based on large language models (LLMs) has achieved progress in reasoning, programming, and program discovery in AI+Science. However, the effectiveness of search depends on where to search, namely, how to encode the domain prior into an operationally structured hypothesis space. To this end, this paper proposes a compact formal theory that describes and measures LLM-assisted iterative search guided by domain priors. We represent an agent as a fuzzy relation operator on inputs and outputs to capture feasible transitions; the agent is thereby constrained by a fixed safety envelope. To describe multi-step reasoning/search, we weight all reachable paths by a single continuation parameter and sum them to obtain a coverage generating function; this induces a measure of reachability difficulty; and it provides a geometric interpretation of search on the graph induced by the safety envelope. We further provide the simplest testable inferences and validate them via a majority-vote instantiation. This theory offers a workable language and operational tools to measure agents and their search spaces, proposing a systematic formal description of iterative search constructed by LLMs.\n        △ Less",
+          "authors": [
+            "Zhuo-Yang Song"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.LO"
+          ],
+          "publishedDate": "2025-10-16",
+          "submittedDate": "2025-10-16",
+          "url": "https://arxiv.org/abs/2510.14846",
+          "pdfUrl": "https://arxiv.org/pdf/2510.14846.pdf",
+          "year": 2025,
+          "comments": "Comments:\n10 pages, 2 figures, 1 table"
+        }
+      ]
+    }
+  ]
+}

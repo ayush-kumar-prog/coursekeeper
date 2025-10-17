@@ -28,12 +28,12 @@ This document gives an LLM everything needed to understand the **end goal**, **s
   - Baseline extraction from syllabus (topics, methods, systems, readings, slide anchors).
   - Yearly **diff reasoning** (ADD/RENAME/DEPRECATE/CORRECT/EMERGE).
   - Writing Patch Notes content (TL;DR, sections, delta learning path).
-- **Senso** — Trusted knowledge base:
+- **Knowledge Base** — Trusted knowledge base (TBD):
   - Index & retrieve sources with **provenance** / confidence.
-  - Enforce **“no citation → no claim”** (every claim must have ≥1–2 citations).
+  - Enforce **"no citation → no claim"** (every claim must have ≥1–2 citations).
 - **Apify** — Multi-source collection:
   - Fetch curated domain sources (e.g., arXiv, conference pages, top course pages, GitHub trending, vendor docs that we allow).
-  - Normalize feeds into a standard schema and push to Senso.
+  - Normalize feeds into a standard schema and push to knowledge base.
 
 **Email**: Resend or SMTP (not a sponsor).
 
@@ -137,9 +137,9 @@ model YearDiff {
 - `GET /api/subjects/[id]/timeline`  
   **Output**: `[{year, status, tlDr}]`
 
-- `POST /api/run`  
-  **Input**: `{subjectId, year}`  
-  **Flow**: map baseline→canon (Senso+OpenAI) → classify changes → fetch citations (Senso) → write Patch Notes (OpenAI) → render PDF → email → save `YearRun`
+- `POST /api/run`
+  **Input**: `{subjectId, year}`
+  **Flow**: map baseline→canon (KB+OpenAI) → classify changes → fetch citations (KB) → write Patch Notes (OpenAI) → render PDF → email → save `YearRun`
 
 - `GET /api/runs/[runId]`  
   **Output**: `{status, pdfUrl, tlDr, sections, bibliography}`
@@ -168,14 +168,14 @@ model YearDiff {
 
 ---
 
-### B) Canon Build (Apify → Senso)
-1. **Apify** discipline-specific actors fetch sources (example: CS/CV):  
-   - arXiv (cs.CV), CVPR/ICCV/ECCV proceedings pages, NeurIPS, top university course pages (CMU/Stanford), OpenCV/PyTorch docs, GitHub trending topics.  
+### B) Canon Build (Apify → Knowledge Base)
+1. **Apify** discipline-specific actors fetch sources (example: CS/CV):
+   - arXiv (cs.CV), CVPR/ICCV/ECCV proceedings pages, NeurIPS, top university course pages (CMU/Stanford), OpenCV/PyTorch docs, GitHub trending topics.
 2. Normalize into:
    ```json
    { "title": "...", "url": "...", "venue": "CVPR", "year": 2014, "type": "paper|tool|course|concept", "summary": "..." }
    ```
-3. Push to **Senso** for indexing; Senso returns provenance IDs & confidences.
+3. Push to **Knowledge Base** for indexing; returns provenance IDs & confidences.
 4. Optional: mirror metadata to our DB for analytics.
 
 **Hard rules**:
@@ -193,7 +193,7 @@ model YearDiff {
    - `DEPRECATE`: usage drops, superseded by new practice.  
    - `CORRECT`: baseline misconception vs modern consensus.  
    - `EMERGE`: high momentum but lower authority (badge as exploratory).
-3. **Citations via Senso**: retrieve ≥2 sources per claim; else mark `(Low evidence)` and still include with badge.  
+3. **Citations via Knowledge Base**: retrieve ≥2 sources per claim; else mark `(Low evidence)` and still include with badge.  
 4. **Write** Patch Notes (OpenAI function output strictly structured):
    ```json
    {
@@ -317,7 +317,7 @@ model YearDiff {
 - **Email**: Resend (or SMTP).  
 - **PDF**: Playwright or @react-pdf/renderer.  
 - **LLM**: OpenAI (function calling + embeddings).  
-- **KB**: Senso (index & retrieve with provenance).  
+- **KB**: Knowledge base solution TBD (index & retrieve with provenance).  
 - **Collection**: Apify actors.
 
 ---
@@ -327,8 +327,8 @@ model YearDiff {
 1. Prisma schema + migrations → Vercel Postgres.  
 2. `/api/subjects` upload → OpenAI `extract_topics` → save baseline.  
 3. Basic UI: Dashboard, Subject timeline, Year Page.  
-4. Apify actor → push to Senso → confirm retrieval works.  
-5. `/api/run` → map/diff → Senso citations → OpenAI write → render PDF → email.  
+4. Apify actor → push to knowledge base → confirm retrieval works.
+5. `/api/run` → map/diff → KB citations → OpenAI write → render PDF → email.  
 6. Cron endpoint → generate pending years.  
 7. Polish: evidence badges, “Low evidence” labels, loading states.
 
