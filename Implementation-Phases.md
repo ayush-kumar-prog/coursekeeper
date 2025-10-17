@@ -6,9 +6,9 @@
 
 **Core Flow**: User uploads old syllabus PDF → System extracts baseline topics → Generates yearly "patch notes" comparing old knowledge to current state → Delivers via web UI and PDF with citations.
 
-**Required Integrations** (Must use all three):
+**Required Integrations**:
 1. **OpenAI** - LLM for extraction, classification, and writing
-2. **Senso** - Knowledge base with citation provenance
+2. **Knowledge Base** - Citation retrieval and provenance tracking (TBD)
 3. **Apify** - Web scraping for academic/industry sources
 
 ---
@@ -47,8 +47,6 @@ DIRECT_URL="postgresql://..."
 
 # APIs
 OPENAI_API_KEY="sk-..."
-SENSO_API_KEY="..."
-SENSO_API_URL="https://api.senso.ai/v1"
 APIFY_API_TOKEN="..."
 
 # Email
@@ -326,7 +324,7 @@ export async function extractTopicsStructured(sections: any[], discipline: strin
 
 ---
 
-## Phase 4: Canon Building (Apify → Senso)
+## Phase 4: Canon Building (Apify → Knowledge Base)
 
 ### 4.1 Apify Actor Setup
 
@@ -374,54 +372,27 @@ function normalizeSourceData(items: any[]) {
 }
 ```
 
-### 4.2 Senso Integration
+### 4.2 Knowledge Base Integration
 
-Create `lib/senso.ts`:
+Create `lib/knowledge-base.ts`:
 ```typescript
-import axios from 'axios'
+// TODO: Implement knowledge base client
+// This should provide:
+// - indexDocuments(documents): Index papers with metadata
+// - retrieveWithProvenance(query, minCitations): Get citations with source tracking
+// - Support for confidence scoring and low evidence marking
 
-const sensoClient = axios.create({
-  baseURL: process.env.SENSO_API_URL,
-  headers: {
-    'Authorization': `Bearer ${process.env.SENSO_API_KEY}`,
-    'Content-Type': 'application/json'
-  }
-})
-
-export async function indexToSenso(documents: any[]) {
-  const response = await sensoClient.post('/index', {
-    documents: documents.map(doc => ({
-      ...doc,
-      metadata: {
-        provenance: 'apify_collection',
-        indexed_at: new Date().toISOString(),
-        confidence: calculateConfidence(doc)
-      }
-    }))
-  })
-  
-  return response.data.documentIds
+export async function indexToKnowledgeBase(documents: any[]) {
+  // TODO: Implement document indexing
+  // Should include provenance, confidence scoring, timestamps
+  throw new Error('Knowledge base integration not implemented')
 }
 
 export async function retrieveWithProvenance(query: string, minCitations = 2) {
-  const response = await sensoClient.post('/retrieve', {
-    query,
-    min_sources: minCitations,
-    include_provenance: true,
-    filters: {
-      confidence: { $gte: 0.7 }
-    }
-  })
-  
-  // Ensure we have proper citations
-  const citations = response.data.results.filter(r => r.provenance)
-  
-  if (citations.length < minCitations) {
-    // Mark as low evidence
-    return { citations, lowEvidence: true }
-  }
-  
-  return { citations, lowEvidence: false }
+  // TODO: Implement citation retrieval
+  // Should return citations with provenance tracking
+  // Mark as lowEvidence if citations < minCitations
+  throw new Error('Knowledge base integration not implemented')
 }
 ```
 
@@ -438,7 +409,7 @@ export async function analyzeYearDiff(
   currentYear: number,
   subject: any
 ) {
-  // Fetch current canon from Senso
+  // Fetch current canon from knowledge base
   const canonItems = await fetchCanonForYear(subject.discipline, currentYear)
   
   // Map baseline to canon using embeddings
@@ -883,7 +854,7 @@ export async function POST(request: NextRequest) {
     
     // Fetch and index canon data
     const canonData = await fetchDisciplineSources(subject.discipline, year)
-    await indexToSenso(canonData)
+    await indexToKnowledgeBase(canonData)
     
     // Analyze differences
     const changes = await analyzeYearDiff(baseline, year, subject)
@@ -1054,7 +1025,7 @@ describe('CourseKeeper E2E Tests', () => {
   })
   
   test('Low evidence badges appear when citations < 2', async () => {
-    // Mock Senso to return only 1 citation
+    // Mock knowledge base to return only 1 citation
     // Generate patch notes
     // Verify "(Low evidence)" appears in output
   })
@@ -1066,7 +1037,7 @@ describe('CourseKeeper E2E Tests', () => {
 ## Success Criteria Checklist
 
 - [ ] **Baseline Extraction**: Upload PDF → topics extracted → stored in DB
-- [ ] **Canon Building**: Apify fetches sources → indexed in Senso
+- [ ] **Canon Building**: Apify fetches sources → indexed in knowledge base
 - [ ] **Diff Analysis**: Baseline vs current state → changes classified
 - [ ] **Citation Enforcement**: Every claim has ≥1 citation or "(Low evidence)"
 - [ ] **Patch Notes Generation**: Structured output with TL;DR, sections, delta path
@@ -1115,10 +1086,6 @@ DIRECT_URL="postgresql://user:pass@host:5432/coursekeeper?sslmode=require"
 # OpenAI
 OPENAI_API_KEY="sk-proj-..."
 
-# Senso
-SENSO_API_KEY="senso_..."
-SENSO_API_URL="https://api.senso.ai/v1"
-
 # Apify
 APIFY_API_TOKEN="apify_api_..."
 
@@ -1143,6 +1110,6 @@ BLOB_READ_WRITE_TOKEN="vercel_blob_..."
 3. **Deterministic LLM**: Always use function calling, never free text
 4. **Email Only**: No WhatsApp/Intercom for MVP
 5. **Autonomous**: After setup, system runs without intervention
-6. **Sponsor Integration**: Must use OpenAI + Senso + Apify (required)
+6. **Core Integrations**: OpenAI for LLM, Apify for web scraping, knowledge base TBD
 
 This implementation guide provides everything an LLM needs to build CourseKeeper from scratch, with specific code examples, API structures, and clear success criteria.
