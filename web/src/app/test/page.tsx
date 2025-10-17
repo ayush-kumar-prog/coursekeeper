@@ -2,9 +2,43 @@
 
 import { useState } from 'react'
 
+interface PatchNotesResult {
+  success: boolean
+  patchNotes: {
+    tldr: string[]
+    sections: {
+      major: string[]
+      tools: string[]
+      resources: string[]
+      corrections: string[]
+      emerging: string[]
+    }
+    deltaPath: Array<{
+      title: string
+      hours: number
+      link: string
+      type: string
+    }>
+    bibliography: Array<{
+      key: string
+      title: string
+      url: string
+      venue: string
+      year: number
+    }>
+  }
+  changes: unknown[]
+  meta: {
+    changesCount: number
+    sectionsCount: number
+    year: number
+    baselineYear: number
+  }
+}
+
 export default function TestPage() {
   const [loading, setLoading] = useState(false)
-  const [result, setResult] = useState<any>(null)
+  const [result, setResult] = useState<PatchNotesResult | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   const runTest = async () => {
@@ -132,7 +166,7 @@ export default function TestPage() {
                 📚 Delta Path (Learning Resources)
               </h3>
               <div className="space-y-3">
-                {result.patchNotes.deltaPath.map((item: any, i: number) => (
+                {result.patchNotes.deltaPath.map((item, i: number) => (
                   <div
                     key={i}
                     className="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
